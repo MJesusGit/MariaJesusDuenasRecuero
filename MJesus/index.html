@@ -10,59 +10,85 @@
         <link rel="icon" href="assets/css/img/icon.png">
     </head>
     <body>
-      <div class="back">
-        <nav>
-          <a href="#inicio">Inicio</a>
-          <a href="#profile">Sobre mí</a>
-          <a href="#proyects">Proyectos</a>
-          <a href="#portfolio">Portfolio</a>
+    
+      <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                  <img src="assets/css/img/logo.png">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                          
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <H1 class="bienvenida">Bienvenidos</H1>
+                <h2>Soy <span>María Jesús Dueñas</span></h2>
+                <h3>INGENIERA INFORMATICA | TECNOLOGIAS DE LA INFORMACION </h3>
+                <p class="descripcion">UNIVERSIDAD DE CASTILLA LA MANCHA </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="assets/css/img/profile.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Maria Jesús Dueñas Recuero</span> </h2>
+            <h3>Ingeniera informatica</h3>
+            <p>Me considero una persona muy trabajadora y proactiva, siempre dispuesta a ayudar.
+              Tengo una gran capacidad de liderazgo y soy una persona muy concienciada en la organización.
+              
+              Siempre he sido una persona muy creativa, con un punto de vista distinto y original.
+              Me gusta aprendes de mi propio entorno y trastear sobre nuevas tecnologías, ya sea por post 
+              en Instagram o
+              tweets de desarrolladores. De esta forma estoy en continuo aprendizaje y herramientas para resolver los problemas que se puedan presentar en un futuro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+         
+
+        </section>
+      </div>
+
+<!----------------------------------proyects---------------------------------------------------->
+
+
+      <div class="proyects">
+        <section class="proyects" id="proyects">
           
-        </nav>
-      </div>
 
-      <div class="inicio">
-        <section class="inicio" id="inicio">
-          <div >
-            
-              <h1>
-                lksnfkjsgbksjGSJKDGIKLSUGH
-                SFJKBSJKDHFBISUEDGFB+ÇSFKHBVKSJVHFBISGB
-                SKVBIKGVBIEUFGIWSFG
-              </h1>
-          </div>
-        </section>
-
-
-
-      </div>
-
-
-
-
-
-
-      <div class="horizontal-padding vertical-padding">
-        <section class="profile" id="profile">
-          <div class="profile-info">
-            <h1 class="profile-title">Hola, soy <br />María Jesús Dueñas Recuero</h1>
-            <p class="profile-details">
-              Soy un apasionado por la arquitectura y desarrollo de software, con
-              más de 10 años de experiencia en varios lenguajes de programación y
-              tecnologías.
-            </p>
-            <button class="profile-btn">Descargar cv</button>
-          </div>
-          <span class="profile-img-section">
-            <img
-              class="profile-img"
-              src="assets/css/img/profile.png"
-              alt="programador"
-            />
-            <div class="profile-img-line"></div>
-          </span>
         </section>
       </div>
-
+      
 
         
     </body>
