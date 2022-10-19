@@ -81,22 +81,26 @@
     <br>
      <!-- SECCION S O B R E M I  estudios-->
      <section id="sobremiFormacionYExperiencia">
-        <p class="titulo-seccion">FORMACIÓN Y EXPERIENCIA</p>
+        <h2 class="titulo-seccion">FORMACIÓN Y EXPERIENCIA</h2>
+       
         <section class="timeline">
             <ul>
+              <li class="imagenes">
+                
+                <div>
+                  <img src="assets/css/img/calendario.png">
+                   <h2>Titulo B1</h2><h3><a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/horarios-y-examenes/">Cambridge english entry level certificate in ESOL</h3></a>Ciudad Real , España<img src="assets/css/img/calendario.png"><time>Julio 2016</time>
+                </div>
+              </li>
+              
               <li>
                 <div>
-                   <h2>Bachillerato tecnológico</h2><br><h3><a href="https://salesianospuertollano.com">Colegio San Juan Bosco (Salesianos)</h3></a><br>Puertollano (Ciudad Real)<br><img src="assets/css/img/calendario.png"><time>2016-2018</time>
+                  <h2>Bachillerato tecnológico</h2><h3><a href="https://salesianospuertollano.com">Colegio San Juan Bosco (Salesianos)</h3></a>Puertollano (Ciudad Real)><img src="assets/css/img/calendario.png"><time>2016-2018</time>
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                  <h2>Grado en ingeniería informática</h2><h3><a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/horarios-y-examenes/">Escuela superior informática</h3></a>Ciudad Real,España<img src="assets/css/img/calendario.png"><time>2018-Actualidad</time>
                 </div>
               </li>
             </ul>
@@ -108,12 +112,6 @@
 
 
 
-
-
-
-
-      
-
 <!----------------------------------proyects---------------------------------------------------->
 
 
@@ -124,52 +122,55 @@
         </section>
       </div>
 <!-----------------------------------contacto---------------------------------------------------->
-<div class="contact_form" id="contacto">
+<section class= "fondo
+" id="contacto">
+  <div class="contact_form" id="contacto">
 
-  <div class="formulario">      
-    <h1>Formulario de contacto</h1>
-      <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
 
-        <form action="submeter-formulario.php" method="post">       
+          <form action="submeter-formulario.php" method="post">       
 
-          
-              <p>
-                <label for="nombre" class="colocar_nombre">Nombre
-                  <span class="obligatorio">*</span>
-                </label>
-                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-              </p>
             
-              <p>
-                <label for="email" class="colocar_email">Email
-                  <span class="obligatorio">*</span>
-                </label>
-                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-              </p>
-              <p>
-                <label for="asunto" class="colocar_asunto">Asunto
-                  <span class="obligatorio">*</span>
-                </label>
-                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-              </p>    
-            
-              <p>
-                <label for="mensaje" class="colocar_mensaje">Mensaje
-                  <span class="obligatorio">*</span>
-                </label>                     
-                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                              </p>                    
-            
-              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
-              <p class="aviso">
-                <span class="obligatorio"> * </span>los campos son obligatorios.
-              </p>          
-          
-        </form>
-  </div>  
-</div>
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+</section>
 
         <footer>
           <hr>
