@@ -217,29 +217,15 @@ nav a:hover:before{
         #inicio .contenido .presentacion h2 span {
             font-size: 60px;
             color: #ff5080;
-            white-space: nowrap;
-             overflow: hidden;
-            animation: typewriter 2s steps(13) infinite alternate,
-            blink 800ms steps(13) infinite normal;
-          border-right: 5px solid black;
+           
             
         }
-        @keyframes typewriter {
-          from {
-            width: 0%;
-          }
-          to {
-            width: 50%;
-          }
+        #inicio .contenido .presentacion h2 span p {
+          font-size: 60px;
+          color: #ff5080;
+          
         }
-        @keyframes blink {
-          from {
-            border-color: black;
-          }
-          to {
-            border-color: transparent;
-          }
-        }
+     
         
         #inicio .contenido .presentacion .descripcion {
             max-width: 700px;
@@ -274,6 +260,38 @@ nav a:hover:before{
             display: none;
             text-align: center;
         }
+
+        
+        .maquina-escribir {
+          font-size: 60px;
+          display: block;
+          font-family: monospace;
+          white-space: nowrap; /* los espacios en blanco no rompen la línea */        
+          width: 19ch; /* el ancho será el número de caracteres que tiene nuestra línea */
+          animation: escribiendo 3s steps(15);          
+          overflow: hidden;
+        }
+
+        .cursor{
+          animation: 0.6s parpadeo-cursor infinite;
+        }
+
+        @keyframes escribiendo {
+          from {
+            width: 0;
+          }
+        }
+
+        @keyframes parpadeo-cursor {
+          50% {
+            opacity: 0;
+          }
+        }
+
+
+
+
+
         /* *********************/
         /* seccion S O B R E  M I */
         /* *********************/
