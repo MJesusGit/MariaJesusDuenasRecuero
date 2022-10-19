@@ -210,26 +210,21 @@ nav a:hover:before{
             margin-bottom: 25px;
             text-align: center;
             
-            
         }
        
         
         #inicio .contenido .presentacion h2 span {
-            font-size: 60px;
+            font-size: 50px;
             color: #ff5080;
-
-           
             
         }
         #inicio .contenido .presentacion h2  p {
-          font-size: 60px;
+          font-size: 50px;
           color: #ff5080;
           overflow: hidden;
           white-space: nowrap;
-          font-size: 2rem;
           margin: 0 auto;
-            
-            font-family: "Montserrat";
+          font-family: "Montserrat";
           border-right: 0.15em solid #ff5080;
           animation: typing 2s steps(15) 1s 1 normal both, blink 1s steps(1) infinite;
         }
@@ -246,9 +241,6 @@ nav a:hover:before{
             border-color: transparent;
           }
         }
-        
-        
-     
         
         #inicio .contenido .presentacion .descripcion {
             max-width: 700px;
@@ -434,12 +426,12 @@ nav a:hover:before{
           bottom: 0;
           width: 400px;
           padding: 15px;
-          background: rgba( 120, 50, 133, 0.35 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 1px );
-            -webkit-backdrop-filter: blur( 1px );
-            border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+          background: rgba(255, 255, 255, 0.35);
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 1px );
+          -webkit-backdrop-filter: blur( 1px );
+           border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
 
         .timeline ul li div::before {
