@@ -206,15 +206,15 @@ nav a:hover:before{
         }
         
         #inicio .contenido .presentacion h2 {
-            font-size: 50px;
-            margin-bottom: 15px;
+            font-size: 70px;
+            margin-bottom: 3px;
             text-align: center;
             
         }
        
         
         #inicio .contenido .presentacion h2 span {
-            font-size: 50px;
+            font-size: 100px;
             color: #ff5080;
             
         }
@@ -244,8 +244,8 @@ nav a:hover:before{
         
         #inicio .contenido .presentacion .descripcion {
             max-width: 700px;
-            margin: 25px auto;
-            font-size: 18px;
+            margin: 2px auto;
+            font-size: 23px;
             text-align: center;
             
         }
@@ -276,14 +276,7 @@ nav a:hover:before{
             text-align: center;
         }
 
-      
-
  
-
-
-
-
-
         /* *********************/
         /* seccion S O B R E  M I */
         /* *********************/
@@ -291,26 +284,24 @@ nav a:hover:before{
         #sobremi {
             max-width: 1200px;
             margin:auto;
-            padding: 100px 15px;
-            color: #111135;
+            padding: 100px 5px;
+            color: #000000;
             display: flex;
         }
         
         #sobremi .contenedor-foto {
-          max-width: 15cm;
+          max-width: cm;
           max-height: 100px;
-          margin-right: 80px;
-      }
+          margin-right: 100px;
+        }
 
-      #sobremi .contenedor-foto img {
-        padding: 20px;
-        /*width: 100%;*/
-        border-radius: 20px;
-        background-color: #f3f3f3;
-    }
+        #sobremi .contenedor-foto img {
+          padding: 20px;
+        /* width: 100%;*/
+          border-radius: 50px;
+          background-color: #f3f3f3;
+      }
       
-      
-        
         #sobremi .sobremi {
             margin: 0 1px;
         }
@@ -335,8 +326,6 @@ nav a:hover:before{
         
         #sobremi .sobremi h2 span {
             color: #ff5080;
-            
-
         }
         
         #sobremi .sobremi h3 {
@@ -372,11 +361,52 @@ nav a:hover:before{
             color: #fff;
         }
 
-       
+        @import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+
+
+hr {
+  border: 0 solid #eeedef;
+  border-top-width: 1px;
+  height: 0;
+  margin: 60px auto;
+  clear: both;
+  display: block;
+  width: 1200px;
+  position: relative;
+}
+hr:before {
+  content: " ";
+  width: 1200px;
+  height: 5px;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid rgb(175, 37, 113);
+  background-color: rgb(228, 38, 155);
+}
+hr:before {
+  left: 0;
+  bottom: -3px;
+  box-shadow: 400px 0 0 -1px #999, 400px 0 0 0 #aaa;
+}
+hr:after {
+  content:url(https://www.google.es/url?sa=i&url=https%3A%2F%2Fwww.pngaaa.com%2Fdetail%2F3115781&psig=AOvVaw1VkHDq85UWWD4ykkHB2p_D&ust=1666568836442000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCOj1iO2C9foCFQAAAAAdAAAAABAJ);
+  display:block;
+  position:absolute;
+  left:50%;
+  height:50px;
+  width:50px;
+  margin:-25px 0 0 -25px;
+  border-radius:50px;
+  overflow:hidden;
+  box-shadow: 0 0 0 1px #eef, 0 0 5px;
+}
+
+
+
 
       /*----------------------------FORMACION Y EXPERIENCIA--------------------------------*/
-      
-
       #sobremiFormacionYExperiencia .titulo-seccion {
             font-size: 50px;
             text-transform: uppercase;
