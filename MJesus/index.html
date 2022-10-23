@@ -22,8 +22,9 @@
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#formación" onclick="seleccionar(this)">FORMACIÓN</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
@@ -51,13 +52,12 @@
         <div class="sobremi">
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola,<br> Soy <span>María Jesús Dueñas Recuero</span> </h2>
-            <p>Me considero una persona muy trabajadora y proactiva, siempre dispuesta a ayudar.
-              Tengo una gran capacidad de liderazgo y soy una persona muy concienciada en la organización.
-              
-              Siempre he sido una persona muy creativa, con un punto de vista distinto y original.
-              Me gusta aprendes de mi propio entorno y trastear sobre nuevas tecnologías, ya sea por post 
-              en Instagram o
-              tweets de desarrolladores. De esta forma estoy en continuo aprendizaje y herramientas para resolver los problemas que se puedan presentar en un futuro.</p>
+            <p>Apasionada de la fotografia y el desarrollo web.</p>
+             <p> Me gusta aprender d emi entorno e ir especializandome como ingeniera informatica enfocada en "user experience(UX)" , "user interface(IU)" y product manager.
+              <br>
+              <br>
+              Afrontar retos m permite ,ejorar y seguir aprendiendo, ademas, poder ayudar a quien lo necesite en el proceso.
+            </p>
               <a href="#portfolio">Descargar CV</a>
               <br></br>
               <form name="formulario" method="post" action="/send.php">
@@ -69,49 +69,30 @@
               <a href="#portfolio">Descargar CV</a>
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr id="one" data-symbol="☂☂☂">
-     <!-- SECCION S O B R E M I  estudios-->
-     <section id="sobremiFormacionYExperiencia">
-        <h2 class="titulo-seccion">FORMACIÓN Y EXPERIENCIA</h2>
-       
-        <section class="timeline">
-            <ul>
-              <li class="imagenes">
-                
-                <div>
-                  <img src="assets/css/img/calendario.png">
-                   <h2>Titulo B1</h2><h3><a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/horarios-y-examenes/">Cambridge english entry level certificate in ESOL</h3></a>Ciudad Real , España<img src="assets/css/img/calendario.png"><time>Julio 2016</time>
-                </div>
-              </li>
-              
-              <li>
-                <div>
-                  <h2>Bachillerato tecnológico</h2><h3><a href="https://salesianospuertollano.com">Colegio San Juan Bosco (Salesianos)</h3></a>Puertollano (Ciudad Real)><img src="assets/css/img/calendario.png"><time>2016-2018</time>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>Grado en ingeniería informática</h2><h3><a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/horarios-y-examenes/">Escuela superior informática</h3></a>Ciudad Real,España<img src="assets/css/img/calendario.png"><time>2018-Actualidad</time>
-                </div>
-              </li>
-            </ul>
-          </section>
-          
-        </section>
+    
+  <!------------------------------------------------------------------------------ SECCION Formación ------------------------------------------------------------------------------->
+    <section id="formación">
+      
+    </div>
+
     </section>
 
 
+    
+  <!------------------------------------------------------------------------- SECCION habilidades ------------------------------------------------------------------------------->
+     <section id="habilidades">
+        <div id="line-container">
+          <!-- Barra de progreso -->
+          <h4>trabajo en equipo</h4>
+          <progress max="100" value="70">
+
+        </div>
+
+     </section>
 
 
-<!----------------------------------proyects---------------------------------------------------->
+
+  <!----------------------------------proyects-------------------------------------------------------------------------------------------------------------------------------------->
 
 
       <div class="proyects">
@@ -120,78 +101,17 @@
 
         </section>
       </div>
-<!-----------------------------------contacto---------------------------------------------------->
-<section class= "fondo
-" id="contacto">
-  <div class="contact_form" id="contacto">
 
-    <div class="formulario">      
-      <h1>Formulario de contacto</h1>
-        
+<!------------------------------------------------------------------------------ SECCION FOOTER------------------------------------------------------------------------------------>
 
 
-          <form action="submeter-formulario.php" method="post">       
 
-            
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
-          </form>
-    </div>  
-  </div>
-</section>
 
-        <footer>
-          <hr>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-         <a href="#">María Jesús Dueñas Recueros</a>.
-            </p>
-          </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
-          </div>
-        </div>
-      </div>
-</footer>
-    </body>
+
+
+
+
+  </body>
 </html>

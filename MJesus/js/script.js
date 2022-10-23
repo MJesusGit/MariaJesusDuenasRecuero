@@ -41,3 +41,31 @@ function seleccionar(link) {
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
   })();
+
+  var lineBar = new ProgressBar.Line("#line-container", {
+    strokeWidth: 4,
+    trailWidth: 0.5,
+    from: { color: "#FF9900" },
+    to: { color: "#00FF99" },
+    text: {
+      value: '0',
+      className: 'progress-text',
+      style: {
+        color: 'black',
+        position: 'absolute',
+        top: '-30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      }
+    },
+    step: (state, shape) => {
+      shape.path.setAttribute("stroke", state.color);
+      shape.setText(Math.round(shape.value() * 100) + ' %');
+    }
+  });
+   
+  lineBar.animate(1, {
+    duration: 4000
+  });
+   
