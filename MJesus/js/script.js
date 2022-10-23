@@ -42,30 +42,17 @@ function seleccionar(link) {
     window.addEventListener("scroll", callbackFunc);
   })();
 
-  var lineBar = new ProgressBar.Line("#line-container", {
-    strokeWidth: 4,
-    trailWidth: 0.5,
-    from: { color: "#FF9900" },
-    to: { color: "#00FF99" },
-    text: {
-      value: '0',
-      className: 'progress-text',
-      style: {
-        color: 'black',
-        position: 'absolute',
-        top: '-30px',
-        padding: 0,
-        margin: 0,
-        transform: null
-      }
-    },
-    step: (state, shape) => {
-      shape.path.setAttribute("stroke", state.color);
-      shape.setText(Math.round(shape.value() * 100) + ' %');
-    }
-  });
-   
-  lineBar.animate(1, {
-    duration: 4000
-  });
-   
+  var currency = "BTC";
+var url = "https://api.coinbase.com/v2/exchange-rates?currency=" + currency;
+var usd = document.querySelector(".usd");
+function makeRequest() {
+  xhr = new XMLHttpRequest();
+  xhr.onload = function() {
+    var response = JSON.parse(this.responseText);
+    usd.innerHTML = response.data.rates.USD + " USD";
+  };
+  xhr.open("GET", url, true);
+  xhr.setRequestHeader("CB-VERSION", "2018-01-01");
+  xhr.send();
+}
+makeRequest();
