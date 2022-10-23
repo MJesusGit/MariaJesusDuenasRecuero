@@ -280,14 +280,31 @@ nav a:hover:before{
         /* *********************/
         /* seccion S O B R E  M I */
         /* *********************/
-        
         #sobremi {
-            max-width: 1200px;
-            margin:auto;
-            padding: 100px 5px;
-            color: #000000;
-            display: flex;
-            
+          max-width: 1200px;
+          margin:auto;
+          padding: 100px 5px;
+          color: #000000;
+          display:grid;
+          padding-bottom: 20%;
+          
+      }
+     
+        * {
+          box-sizing: border-box;
+        }
+        
+        .columna {
+          float: left;
+          width: 50%;
+          padding-right: 5px;
+          
+        }
+     
+        .fila::after {
+          content: "";
+          clear: both;
+          display: table;
         }
         
         #sobremi .contenedor-foto {
@@ -295,74 +312,156 @@ nav a:hover:before{
           max-height: 100px;
           margin-right: 100px;
           padding-bottom: 50%;
+          padding-left: 10%;
         }
 
         #sobremi .contenedor-foto img {
           padding: 5px;
-        /* width: 100%;*/
+          max-width: 100%;
           border-radius: 120px;
           background-color: #f3f3f3;
+          padding-left: 10px;
+          border-radius: 50%;
       }
       
         #sobremi .sobremi {
             margin: 0 1px;
         }
         
-        #sobremi .sobremi .titulo-seccion {
+        #sobremi  .titulo-seccion {
             font-size: 50px;
             text-transform: uppercase;
-            color: #111135;
+            color: #000000;
             text-decoration: underline;
-            text-decoration-color: #ff507f5b;
+            text-decoration-color: #ff507f;
             text-decoration-thickness: 5px;
             text-align: center;
+            padding-top: 10px;
             padding-bottom: 20px;
+            
+            
+            
+            
         }
         
-        #sobremi .sobremi h2 {
+        #sobremi  h2 {
             font-size: 30px;
             font-weight: bold;
             margin: 5px 0;
             letter-spacing: 2px;
+            padding-top: 60px;
+            
+          
+           
         }
         
-        #sobremi .sobremi h2 span {
+        #sobremi  h2 span {
             color: #ff5080;
+            
+           
         }
         
-        #sobremi .sobremi h3 {
+        #sobremi  h3 {
             font-size: 18px;
             font-weight: 500;
             text-transform: uppercase;
             margin-bottom: 20px;
             letter-spacing: 1px;
+            padding: 20px;
+            
         }
         
-        #sobremi .sobremi p {
+        #sobremi  p {
             font-size: 20px;
             line-height: 20px;
             color: #565656;
             margin-bottom: 12px;
             text-align:justify;
+            
         }
         
-        #sobremi .sobremi a {
+        #sobremi  a {
             display:flex;
             text-decoration:wavy;
             color: #000;
-            border-radius: 30px;
+            border-radius: 20px;
             border: 1px solid #000;
             padding: 10px 20px;
             margin-top: 30px;
             transition: .5s;
-            text-align: center;
+            text-align:justify;
+          
             
         }
         
-        #sobremi .sobremi a:hover {
+        #sobremi  a:hover {
             background-color: #ff5080;
             color: #fff;
         }
+        .button{text-decoration:none; text-align:center; 
+          padding:11px 50px; 
+          border:solid 1px #ff507f; 
+          -webkit-border-radius:4px;
+          -moz-border-radius:4px; 
+          border-radius: 4px; 
+          font:17px Arial, Helvetica, sans-serif; 
+          font-weight:bold; 
+          color:#E5FFFF; 
+          background-color:#ff507f; 
+          background-image: -moz-linear-gradient(top, #ff507f 0%, #ba1743 100%); 
+          background-image: -webkit-linear-gradient(top, #ff507f 0%, #ba1743 100%); 
+          background-image: -o-linear-gradient(top, #ff507f 0%, #ba1743 100%); 
+          background-image: -ms-linear-gradient(top, #ff507f 0% ,#ba1743 100%); 
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba1743', endColorstr='#ba1743',GradientType=0 ); 
+          background-image: linear-gradient(top, #ff507f 0% ,#ba1743 100%);   
+          -webkit-box-shadow:1px 0px 5px #bababa, inset 0px 0px 1px #ffffff; 
+          -moz-box-shadow: 1px 0px 5px #bababa,  inset 0px 0px 1px #ffffff;  
+          box-shadow:1px 0px 5px #bababa, inset 0px 0px 1px #ffffff;  
+           
+          text-shadow: 0px 0px 4px #ffffff; 
+          filter: dropshadow(color=#ffffff, offx=0, offy=0); }.button:hover{
+          padding:11px 50px; 
+          border:solid 1px #ff507f; 
+          -webkit-border-radius:4px;
+          -moz-border-radius:4px; 
+          border-radius: 4px; 
+          font:17px Arial, Helvetica, sans-serif; 
+          font-weight:bold; 
+          color:#E5FFFF; 
+          background-color:#fa7fa0; 
+          background-image: -moz-linear-gradient(top, #fa7fa0 0%, #bd5a75 100%); 
+          background-image: -webkit-linear-gradient(top, #fa7fa0 0%, #bd5a75 100%); 
+          background-image: -o-linear-gradient(top, #fa7fa0 0%, #bd5a75 100%); 
+          background-image: -ms-linear-gradient(top, #fa7fa0 0% ,#bd5a75 100%); 
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd5a75', endColorstr='#bd5a75',GradientType=0 ); 
+          background-image: linear-gradient(top, #fa7fa0 0% ,#bd5a75 100%);   
+          -webkit-box-shadow:1px 0px 5px #bababa, inset 0px 0px 1px #ffffff; 
+          -moz-box-shadow: 1px 0px 5px #bababa,  inset 0px 0px 1px #ffffff;  
+          box-shadow:1px 0px 5px #bababa, inset 0px 0px 1px #ffffff;  
+           
+          text-shadow: 0px 0px 4px #12080b; 
+          filter: dropshadow(color=#12080b, offx=0, offy=0);}.button:active{
+          padding:11px 50px; 
+          border:solid 1px #ff507f; 
+          -webkit-border-radius:4px;
+          -moz-border-radius:4px; 
+          border-radius: 4px; 
+          font:17px Arial, Helvetica, sans-serif; 
+          font-weight:bold; 
+          color:#E5FFFF; 
+          background-color:#ff507f; 
+          background-image: -moz-linear-gradient(top, #ff507f 0%, #ba1743 100%); 
+          background-image: -webkit-linear-gradient(top, #ff507f 0%, #ba1743 100%); 
+          background-image: -o-linear-gradient(top, #ff507f 0%, #ba1743 100%); 
+          background-image: -ms-linear-gradient(top, #ff507f 0% ,#ba1743 100%); 
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba1743', endColorstr='#ba1743',GradientType=0 ); 
+          background-image: linear-gradient(top, #ff507f 0% ,#ba1743 100%);   
+          -webkit-box-shadow:1px 0px 5px #bababa, inset 0px 0px 1px #ffffff; 
+          -moz-box-shadow: 1px 0px 5px #bababa,  inset 0px 0px 1px #ffffff;  
+          box-shadow:1px 0px 5px #bababa, inset 0px 0px 1px #ffffff;  
+           
+          text-shadow: 0px 0px 4px #12080b; 
+          filter: dropshadow(color=#12080b, offx=0, offy=0);}
 /*------------------------------------------------------------------------- SECCION formacion ----------------------------------------------------------------------------------*/
 
 #formación {
@@ -442,6 +541,85 @@ nav a:hover:before{
 
 
 /*------------------------------------------------------------------------- SECCION habilidades -------------------------------------------------------------------------------*/
+
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.progress-container {
+  position: relative;
+}
+
+.progress-container + .progress-container,
+.progress-container ~ .progress-container {
+  margin-top: 15px;
+}
+.progress-container {
+  position: relative;
+}
+
+.progress-container + .progress-container,
+.progress-container ~ .progress-container {
+  margin-top: 15px;
+}
+
+.progress-container .progress-badge {
+  color: #888;
+  font-size: 0.8571em;
+  text-transform: uppercase;
+}
+
+.progress-container .progress {
+  height: 1px;
+  border-radius: 0;
+  box-shadow: none;
+  background: rgba(222, 222, 222, 0.8);
+  margin-top: 14px;
+}
+
+.progress-container .progress .progress-bar {
+  box-shadow: none;
+  background-color: #888;
+}
+
+.progress-container .progress .progress-value {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #888;
+  font-size: 0.8571em;
+}
+
+.progress-container {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.progress-container .progress-bar {
+  height: 5px;
+  transform: scaleX(0);
+  transition: transform 2s ease-in-out;
+  transform-origin: 0% 0%;
+}
+
+.progress-container .progress {
+  height: 5px;
+  font-size: 18px;
+}
+
+.progress-container .aos-animate {
+  transform: scaleX(1);
+}
+
+.progress-container.progress-primary .progress-badge {
+  color: #000;
+  font-weight: bold;
+}
+
+.progress-container.progress-primary .progress-value, .progress-container.progress-primary .progress-badge {
+  color: #000;
+  font-weight: bold;
+}
 
 
 
