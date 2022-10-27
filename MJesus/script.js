@@ -21,3 +21,5 @@ function seleccionar(links) {
     opciones[4].className = "";
     links.className = "seleccionado";
 }
+
+//apartado de formacion
