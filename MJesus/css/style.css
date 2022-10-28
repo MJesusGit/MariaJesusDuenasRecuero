@@ -206,9 +206,17 @@ ul.show{
     .menu_items li{
         margin: 5px 0 0 0;
         line-height: 30px;
-    }
-    
+    }   
+	.about-text{
+		width: 550px;
+		
+	}
 }
+
+
+
+
+
 .newslatter form{
 	width: 380px;
 	max-width: 100%;
@@ -435,3 +443,7 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px; 
 }
+
+
+
+

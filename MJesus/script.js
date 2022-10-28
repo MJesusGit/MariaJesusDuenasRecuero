@@ -22,4 +22,25 @@ function seleccionar(links) {
     links.className = "seleccionado";
 }
 
-//apartado de formacion
+//apartado de tabs-formacion
+let tabheader = document.getElementsByClassName("tab-header")[0];
+let tabIndicator= document.getElementsByClassName("tab-indicator")[0];
+let tabbody = document.getElementsByClassName("tab-body")[0];
+
+let tabsPane=  tabheader.getElementsByTagName("div");
+
+for(let i=0; i<tabsPane.length;i++){
+    tabsPane[i].addEventListener("click", function(){
+        tabheader.getElementsByClassName("active")
+[0].classList.remove("active");
+    tabsPane[i].classList.add("active");
+    tabbody.getElementsByClassName("active")
+[0].classList.remove("active");
+    tabsBody[i].getElementsByClassName("div")
+[i].classList.add("active");
+
+       // tabIndicator.style.left = 'calc(calc(100%/4) * ${i})`
+
+    });
+
+}
