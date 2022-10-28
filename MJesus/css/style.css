@@ -1,3 +1,9 @@
+:root{
+	--primary
+	--mb-2-5: 2.5rem;
+
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -320,10 +326,21 @@ button:hover{
 	margin-bottom: 20px;
 	text-align: center;
 }
+.section__subtitle{
+	color: white;
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
 .qualification__tabs{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 40px;
+	padding-left: 70px;
 }
 
 .qualification__button{
@@ -348,8 +365,9 @@ button:hover{
 }
 
 .qualification__title{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-size: 25px;
+    font-weight: bold;
+	padding-left: 15%;
 }
 
 .qualification__subtitle{
@@ -360,7 +378,7 @@ button:hover{
 
 .qualification__calendar{
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+    color:#515050 ;
 }
 
 .qualification__rounder{
@@ -388,7 +406,7 @@ button:hover{
 }
 
 .qualification__button.qualification__active{
-    color: var(--first-color);
+    color: #f9004d;
 }
 
 .nothing__title{
@@ -398,11 +416,11 @@ button:hover{
 }
 
 .qualification__link{
-    color: var(--first-color);
+    color: #ffffff;
 }
 
 .qualification__link:hover{
-    color: var(--link-color-hover);
+    color: #f9004d;
 }
 
 /*---------*/
