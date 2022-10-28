@@ -23,24 +23,22 @@ function seleccionar(links) {
 }
 
 //apartado de tabs-formacion
-let tabheader = document.getElementsByClassName("tab-header")[0];
-let tabIndicator= document.getElementsByClassName("tab-indicator")[0];
-let tabbody = document.getElementsByClassName("tab-body")[0];
 
-let tabsPane=  tabheader.getElementsByTagName("div");
+/*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll("[data-target]"),
+    tabContents = document.querySelectorAll("[data-content]")
 
-for(let i=0; i<tabsPane.length;i++){
-    tabsPane[i].addEventListener("click", function(){
-        tabheader.getElementsByClassName("active")
-[0].classList.remove("active");
-    tabsPane[i].classList.add("active");
-    tabbody.getElementsByClassName("active")
-[0].classList.remove("active");
-    tabsBody[i].getElementsByClassName("div")
-[i].classList.add("active");
+tabs.forEach(tab =>{
+    tab.addEventListener("click", () =>{
+        const target = document.querySelector(tab.dataset.target)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove("qualification__active")
+        })
+        target.classList.add("qualification__active")
 
-       // tabIndicator.style.left = 'calc(calc(100%/4) * ${i})`
-
-    });
-
-}
+        tabs.forEach(tab =>{
+            tab.classList.remove("qualification__active")
+        })
+        tab.classList.add("qualification__active")
+    })
+})
