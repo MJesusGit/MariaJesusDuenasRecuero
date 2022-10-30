@@ -340,7 +340,9 @@ button:hover{
 .qualification__tabs{
     display: flex;
     justify-content: space-evenly;
+	font-size: 20px;
     margin-bottom: 40px;
+	color: #f7f5f5;
 	
 	
 }
@@ -429,6 +431,7 @@ button:hover{
 
 .qualification__button.qualification__active{
     color: #f9004d;
+	font-weight: bold;
 }
 
 .nothing__title{
@@ -523,9 +526,11 @@ button:hover{
 
 
 .service{
-	background: #101010d0;
+	background-image: url(../img/low-poly-grid-haikei.svg);
 	width: 100%;
 	padding: 100px 0px;
+	background-size: cover;
+	background-position: center;
 }
 .title h2{
 	color: white;
