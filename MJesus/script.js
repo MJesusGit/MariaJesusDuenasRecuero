@@ -42,3 +42,14 @@ tabs.forEach(tab =>{
         tab.classList.add("qualification__active")
     })
 })
+
+//progress bar
+CSS.registerProperty({
+    name: "--p",
+    syntax: "<integer>",
+    initialValue: 0,
+    finalValue:40,
+    inherits: true,
+  });
+
+

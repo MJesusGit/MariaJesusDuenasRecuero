@@ -450,18 +450,42 @@ button:hover{
 
 /*---------*/
 
+.habilidades{
+	background-color: #191919;
+}
 
 
 
 
 
+/*********************************************************************************************************************
+*
+*
+*************************************************PROYECTOS************************************************************
+*
+*
+**********************************************************************************************************************/
 
+.proyectos{
+	background-color: #191919;
+	width: 100%;
+	padding: 100px 0px;
+	background-size: cover;
+	background-position: center;
+}
 
+.proyectos .grid__proyectos{
+	padding-top:  20px; 
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap:10px;
+}
 
-
-
-
-
+.proyectos .grid__proyectos img{
+	width: 100%;
+	border-radius: 3px ;
+	margin: auto;
+}
 
 
 
