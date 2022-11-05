@@ -259,6 +259,17 @@ ul.show{
 	width: 100%;
 	padding: 100px 0px;
 	background-color: #191919;
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.925);
+
+	background-size: cover;
+
 }
 .about img{
 	height: auto;
@@ -268,6 +279,8 @@ ul.show{
 .about-text{
 	width: 550px;
 }
+
+
 .main{
 	width: 1130px;
 	max-width: 95%;
@@ -335,6 +348,14 @@ button:hover{
 .qualification section{
 	background-color: #fff;
 	min-height: 100vh;
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
 }
 .qualification__container__container{
 	padding-bottom: 10%;
@@ -456,11 +477,30 @@ button:hover{
 
 .habilidades{
 	background-color: #191919;
+	width: 100%;
+	padding: 100px 0px;
+
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+
+	background-size: cover;
 }
 
 
 
+.centrar__divs{
+	display: flex;
+	align-items: center;
+	padding: 40px;
+	margin: auto;
 
+}
 
 /*********************************************************************************************************************
 *
@@ -471,7 +511,7 @@ button:hover{
 **********************************************************************************************************************/
 
 .proyectos{
-	background-image: url(../img/low-poly-grid-haikei.svg);
+	background-color: #191919;
 	width: 100%;
 	padding: 100px 0px;
 	background-size: cover;
@@ -492,6 +532,8 @@ button:hover{
 	flex-wrap:wrap ;
 	border-radius: 6px;
 	text-align: center;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .proyectos__contenedor__imagenes .proyectos__imagen{
@@ -862,7 +904,7 @@ button:hover{
 
 
 .service{
-	background-image: url(../img/low-poly-grid-haikei.svg);
+	background-color: #191919;
 	width: 100%;
 	padding: 100px 0px;
 	background-size: cover;
