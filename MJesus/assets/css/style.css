@@ -671,19 +671,24 @@ button:hover{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: rgba(0, 0, 0, 0.925);
+	background-color: rgba(254, 253, 253, 0.925);
 	background-image: url(../img/puertollano.jpg);
 	background-size: cover;
 }
+
 #contacto:before {
 	content:'';
 	position: absolute;
-        top: 0;
+    top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(29, 28, 28, 0.6);
+	
 }
+
+
+
 .contacto__tittle{
 	max-width: 800px;
 	text-align: center;
@@ -764,9 +769,15 @@ button:hover{
 }
 
 .contacto__contacto__form{
-	width: 40%;
+	width: 30%;
 	padding: 40px;
 	background: #ffff;
+	background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 17px );
+-webkit-backdrop-filter: blur( 17px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .contacto__contacto__form h3{
