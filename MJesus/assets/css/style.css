@@ -9,7 +9,29 @@
 06.Footer
 07.Queries
 ************************************************/
-
+.proyectos .main-title {
+	text-align: center;
+  }
+  .proyectos .main-title h2 {
+	position: relative;
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 700;
+  }
+  .proyectos.main-title h2 span {
+	color: var(--color-secondary);
+  }
+  .proyectos .main-title h2 .bg-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: var(--color-grey-5);
+	transition: all 0.4s ease-in-out;
+	z-index: -1;
+	transform: translate(-50%, -50%);
+	font-weight: 800;
+	font-size: 6.3rem;
+  }
 
 /***********************************************
 *                                              *
@@ -18,6 +40,8 @@
 ***********************************************/
 :root {
 	--primary-color:#f9004d;
+	--secondary-color:#b2becd;
+	--color-grey-5: #2a2e35;
 	--white:white;
 	--overlay-color:#666;
 	--background-section:#191919;
@@ -45,6 +69,7 @@ section[id]{
 
 body{
     font-family: 'Montserrat';
+	
 }
 h1{
 	color: var(--white);
@@ -185,8 +210,196 @@ ul.show{
 **************** 03.SobreMi *********************
 *                                              *
 ***********************************************/
-
 .sobre__mi__section{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: var(--background-section);
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+
+	background-size: cover;
+
+}
+
+.sobre__mi__contenedor{
+	width: 100%;
+	padding: 50px 8%;
+}
+
+.sobre__mi__profile__image{
+	grid-area: imageSect;
+	
+
+}
+.sobre__mi__informacion{
+	padding-right: 20%;
+	grid-area:infoSect;
+	border: 1px solid red;
+}
+.sobre__mi__skills{
+	grid-area:skillSection;
+	border: 1px solid yellow;
+}
+
+
+.sobre__mi__contenedor .sobre__mi__contents{
+	display: grid;
+	grid-template-columns: 2fr 5fr ;
+	grid-gap: 70px;
+	grid-template-areas: 'imageSect infoSect' 'skillSection skillSection';
+
+}
+.sobre__mi__contents .sobre__mi__profile__image{
+	position:relative;
+	min-width: 300px;
+	height: 550px;
+}
+
+.sobre__mi__profile__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+	z-index: 2;
+	border-radius: 10px;
+
+}
+
+.sobre__mi__contents .sobre__mi__profile__image::after{
+	position:absolute ;
+	content: '';
+	width:100%;
+	height:100%;
+	outline: 3px solid var(--primary-color);
+	top:15px;
+	left:10px;
+	z-index: 1;
+	border-radius: 10px;
+
+
+}
+.sobre__mi__informacion h1{
+	color: var(--white);
+	font-size: 70px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.sobre__mi__informacion h1::before{
+	content: '';
+	position:absolute ;
+	width: 100%;
+	height: 1px;
+	top:110%;
+	left:0;
+	background-color:#aaabb0 ;
+}
+.sobre__mi__informacion h1::after{
+	content: '';
+	position:absolute ;
+	width: 40%;
+	height: 3px;
+	top:calc(25% - 1px );
+	left: 450px;
+	
+}
+
+.sobre__mi__informacion h2{
+	color: var(--white);
+	letter-spacing: 2px;
+	font-size: 22px;
+	text-transform: capitalize;
+	padding: 14px 0px 15px;
+
+}
+
+.sobre__mi__informacion p{
+	color: var(--white);
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	padding-bottom: 8px;
+	margin-bottom: 45px;
+	text-align: justify;
+}
+.sobre__mi__soft__skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:10px 10px;
+	margin-top: 14px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--primary-color);
+}
+
+
+
+
+
+
+
+ button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+
+.sobre__mi__skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:10px 80px;
+
+
+}
+.sobre__mi__skills .subject{
+	font-size: 17px;
+	font-weight: thin;
+	color: #000;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.progress_bar{
+	width:100%;
+	height: 16px;
+	background-color: #2b2a2f;
+	padding: 4px 6px;
+	border-top:1px solid var(--white);
+	border-bottom: 1px solid #444;
+	border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.sobre__mi__section{
 	width: 100%;
 	padding: 100px 0px;
 	background-color: var(--background-section);
@@ -240,23 +453,9 @@ ul.show{
 	font-size: 18px;
 	margin-bottom: 45px;
 	text-align: justify;
-}
+}*/
 
-button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 30px;
-	transition: .4s; 
-}
-button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
-}
+
 
 /***********************************************
 *                                              *
@@ -284,8 +483,8 @@ button:hover{
 	display: inline-block;
 	
 }
-.qualification section{
-	background-color: #fff;
+.qualification__section{
+	background-color: var(--background-section);
 	min-height: 100vh;
 	position: relative;
 	min-height: 100vh;
@@ -294,6 +493,7 @@ button:hover{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
 
 }
 .qualification__container__container{
@@ -535,7 +735,7 @@ button:hover{
 **********************************************************************************************************************/
 
 .proyectos{
-	background-color: #191919;
+	background-color: var(--white);
 	width: 100%;
 	padding: 100px 0px;
 	background-size: cover;
@@ -1103,7 +1303,33 @@ footer p:nth-child(2){
         justify-content: center;
     }
 }
+@media (max-width:1068px){
+	.sobre__mi__contenedor .sobre__mi__contents{
+		grid-template-areas: 'imageSect skillSection' 'infoSect infoSect';
+	}
+	.sobre__mi__skills{
+		grid-template-columns:  1fr;
+		grid-gap:20px;
+	}
+	.sobre__mi__informacion{
+		padding-right: 10%;
+		grid-area:infoSect;
+		border: 1px solid red;
+	}
+}
+@media (max-width:868px){
+	.sobre__mi__contenedor .sobre__mi__contents{
+		grid-template-areas: 'imageSect imageSect ' 'infoSect infoSect' 'skillSection skillSection';
+	}
+	
+}
+@media (max-width:668px){
+	.sobre__mi__soft__skills{
+		grid-template-columns:1fr ;
 
+	}
+	
+}
 
 @media screen and (max-width:858px) and (orientation:landscape){
  

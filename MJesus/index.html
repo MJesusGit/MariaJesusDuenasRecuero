@@ -18,9 +18,7 @@
 			<ul class="menu_items" id="links">
 				<li><a href="#inicio" class="active" onclick="seleccionar(this)">INICIO</a></li>
 				<li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-				<li><a href="#formación" onclick="seleccionar(this)">FORMACIÓN</a></li>
-				<li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
-				<li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+				<li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
 				<li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
 			</ul>
 			</ul>
@@ -39,232 +37,84 @@
 
 	<!----About section start---->
 	<section class="sobre__mi__section" id="sobremi">
-		<div class="sobre__mi">
-		
-			<div class="sobre__mi__text">
-				<h2>Sobre mí</h2>
-				<h5>Web developer <span>& Designer</span></h5>
-
-				<p>Me considero una persona muy trabajadora y resolutiva 
-					Se me da bien trabajar en equipos y tiendo a llevarme bien con mis compañeros. 
-					
-					Entre mis puntos fuertes destacaría
-					-el diseño de.aplicaciones UX/UI. 
-					En la creación y participación en proyectos soy muy polivalente ya que mis hobbies tocan diferentes areas que favorecen la creatividad, tales como la fotografia, la lectura entre otras.
-					-Me implico mucho en mi trabajo, tiendo a estudiar a fondo las tecnologias y areas que tengo que usar para asi familiarizarme rapidamente con ellas</p>
+		<div class="sobre__mi__contenedor">
+			<div class="sobre__mi__contents">
+				<section class="sobre__mi__profile__image">
+					<img src="assets/img/profile.png">
+				</section>
+				<section class="sobre__mi__informacion">
+					<h1>Sobre mi</h1>
+					<h2>sdfnsjfbsf</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquam excepturi odio repudiandae officiis ullam tempore, aliquid distinctio exercitationem asperiores. Dolorum voluptatum fugit vel quas cupiditate consectetur animi eligendi porro!</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium assumenda a doloremque, deleniti temporibus dolorem soluta aliquam animi. Cumque odit, nisi quisquam animi rem quaerat repudiandae distinctio veniam sint.</p>
+				<div class="sobre__mi__soft__skills">
+					<div><img src="assets/img/soft-skills/corazon.png" width="40px" height="40px"> <span>fawfawfsef</span></div>
+					<div><img src="assets/img/soft-skills/creativo.png" width="40px" height="40px"> <span>fawfawfsef</span></div>
+					<div><img src="assets/img/soft-skills/trato.png" width="40px" height="40px"> <span>fawfawfsef</span></div>
+					<div><img src="assets/img/soft-skills//habilidades-blandas.png" width="40px" height="40px"> <span>fawfawfsef</span></div>
 				
-			</div>
-		</div>
-		
-		<!--------------Formación----------------------->
 
-		<section class="qualification section" >
-			<h2 class="section__title">FORMACIÓN</h2>
-
-			<div class="qualification__container__container">
-				<div class="qualification__tabs">
-					<div class="qualification__button button--flex qualification__active" data-target="#education">
-						<i class="fa fa-graduation-cap"></i>
-						Educación
-					</div>
-					<div class="qualification__button button--flex" data-target="#cursos">
-						<i class="fa fa-archive"></i>
-						Cursos y seminarios
-					</div>
-
-					<div class="qualification__button button--flex" data-target="#work">
-						<i class=" fa fa-briefcase"></i>
-						Trabajo
+				</div>
+				
+				<div class="sobre__mi__button__cv">
+					<div class="social">
+						<a href="#"><i class="fab fa-linkedin"></i></a>
 					</div>
 				</div>
-				<div class="qualification__sections">
-					<!--==================== QUALIFICATION SECTION 1====================-->
-					<div class="qualification__content qualification__active" data-content id="education">
-						<!--==================== QUALIFICATION 1====================-->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title__impar">Título ingles B1</h3>
-								<span class="qualification__subtitle__impar">
-									<a href="https://www.cambridgeenglish.org/es/" target="_blank" class="qualification__link">Cambridge</a><br>Ciudad Real, España
-								</span>
-								<div class="qualification__calendar__impar">
-									<i class="fa fa-calendar-alt"></i>
-									Julio 2016
-								</div>
-							</div>
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-						</div>
-						<!--==================== QUALIFICATION 2====================-->
-						<div class="qualification__data">
-							<div></div>
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-							<div>
-								<h3 class="qualification__title">Bachillerato Tecnológico - </h3>
-								<span class="qualification__subtitle">
-									<a href="" target="_blank" class="qualification__link">Colegio San Juan Bosco (Salesianos)</a><br>Puertollano,Ciudad Real (España)
-								</span>
-								<div class="qualification__calendar">
-									<i class="fa fa-calendar-alt"></i>
-									2016-2018
-								</div>
-							</div>
-						</div>
-						<!--==================== QUALIFICATION 3====================-->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title__impar">Grado en Ingeniería Informática</h3>
-								<div class="qualification__calendar__impar">
-									<i class="fa fa-medal"></i>
-									Matricula de honor ipo II
-								</div>
-								
-								<span class="qualification__subtitle__impar">
-									 <a href="https://esi.uclm.es/" target="_blank" class="qualification__link">ESI</a> - <a href="https://www.uclm.es/" target="_blank" class="qualification__link">UCLM</a>, Ciudad Real, España<br>
-									 <a href="https://esi.uclm.es/categories/intensificaciones" target="_blank" class="qualification__link">Intensificación en Tecnologías de la información</a><br>
-									 <a href="https://esi.uclm.es/categories/grado-bilingue" target="_blank" class="qualification__link">Modalidad Bilingüe</a>
-								</span>
-								
-								<div class="qualification__calendar__impar">
-									<i class="uil uil-calendar-alt"></i>
-									2018-Actualidad
-								</div>
-							</div>
-							<div>
-								<span class="qualification__rounder"></span>
-								<!-- <span class="qualification__line"></span> -->
-							</div>
-						</div>                     
-					</div>
-
-					<!--==================== course SECTION 2====================-->
-					<div class="qualification__content" data-content id="cursos">
-						<!--==================== course 1====================-->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title__impar">Título ingles B1</h3>
-								<span class="qualification__subtitle__impar">
-									<a href="https://www.cambridgeenglish.org/es/" target="_blank" class="qualification__link">Cambridge</a><br>Ciudad Real, España
-								</span>
-								<div class="qualification__calendar__impar">
-									<i class="fa fa-calendar-alt"></i>
-									Julio 2016
-								</div>
-							</div>
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-						</div>
-						<!--==================== course 2====================-->
-						<div class="qualification__data">
-							<div></div>
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-							<div>
-								<h3 class="qualification__title">Bachillerato Tecnológico - </h3>
-								<span class="qualification__subtitle">
-									<a href="" target="_blank" class="qualification__link">Colegio San Juan Bosco (Salesianos)</a><br>Puertollano,Ciudad Real (España)
-								</span>
-								<div class="qualification__calendar">
-									<i class="fa fa-calendar-alt"></i>
-									2016-2018
-								</div>
-							</div>
-						</div>
-						<!--==================== course 3====================-->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title__impar">Grado en Ingeniería Informática</h3>
-								<div class="qualification__calendar__impar">
-									<i class="fa fa-medal"></i>
-									Matricula de honor ipo II
-								</div>
-								
-								<span class="qualification__subtitle__impar">
-									 <a href="https://esi.uclm.es/" target="_blank" class="qualification__link">ESI</a> - <a href="https://www.uclm.es/" target="_blank" class="qualification__link">UCLM</a>, Ciudad Real, España<br>
-									 <a href="https://esi.uclm.es/categories/intensificaciones" target="_blank" class="qualification__link">Intensificación en Tecnologías de la información</a><br>
-									 <a href="https://esi.uclm.es/categories/grado-bilingue" target="_blank" class="qualification__link">Modalidad Bilingüe</a>
-								</span>
-								
-								<div class="qualification__calendar__impar">
-									<i class="uil uil-calendar-alt"></i>
-									2018-Actualidad
-								</div>
-							</div>
-							<div>
-								<span class="qualification__rounder"></span>
-								 <span class="qualification__line"></span> 
-							</div>
-						</div>                     
-						
-						<div>
-							<span class="qualification__rounder"></span>
-							<span class="qualification__line"></span>
-						</div>
-						
-						<!--==================== course 4====================-->
-						<div class="qualification__data">
-							<div></div>
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-							<div>
-								<h3 class="qualification__title">Bachillerato Tecnológico - </h3>
-								<span class="qualification__subtitle">
-									<a href="" target="_blank" class="qualification__link">Colegio San Juan Bosco (Salesianos)</a><br>Puertollano,Ciudad Real (España)
-								</span>
-								<div class="qualification__calendar">
-									<i class="fa fa-calendar-alt"></i>
-									2016-2018
-								</div>
-							</div>
-						</div>
-						<!--==================== course 5====================-->
-						<div class="qualification__data">
-							<div>
-								<h3 class="qualification__title__impar">Grado en Ingeniería Informática</h3>
-								<div class="qualification__calendar__impar">
-									<i class="fa fa-medal"></i>
-									Matricula de honor ipo II
-								</div>
-								
-								<span class="qualification__subtitle__impar">
-									 <a href="https://esi.uclm.es/" target="_blank" class="qualification__link">ESI</a> - <a href="https://www.uclm.es/" target="_blank" class="qualification__link">UCLM</a>, Ciudad Real, España<br>
-									 <a href="https://esi.uclm.es/categories/intensificaciones" target="_blank" class="qualification__link">Intensificación en Tecnologías de la información</a><br>
-									 <a href="https://esi.uclm.es/categories/grado-bilingue" target="_blank" class="qualification__link">Modalidad Bilingüe</a>
-								</span>
-								
-								<div class="qualification__calendar__impar">
-									<i class="uil uil-calendar-alt"></i>
-									2018-Actualidad
-								</div>
-							</div>
-							<div>
-								<span class="qualification__rounder"></span>
-								<!-- <span class="qualification__line"></span> -->
-							</div>
-						</div>                     
-					</div>                                  
-					</div>
-
-					<!--==================== QUALIFICATION SECTION 3====================-->
-					<div class="qualification__content" data-content id="work">
-						<h2 class="nothing__title">¡No pierdas la oportunidad de ser el primero!</h2>                         
-					</div>
-				</div> 
+				</section>
 			</div>
-		</section>
+			<section class="sobre__mi__informacion">
+				<h1>Sobre mi</h1>
+				<h2>sdfnsjfbsf</h2>
+			</section>
+			<section class="sobre__mi__skills">
+				
+				<div class="sobre__mi__skills__progress">
+					<div class="subject">Hard work</div>
+					<div class="progress_bar"></div>
+						<div class="progress_line" value="94%" style="max-width: 94%"></div>
+				</div>
 
+				<div class="sobre__mi__skills__progress">
+					<div class="subject">Hard work</div>
+					<div class="progress_bar"></div>
+						<div class="progress_line" value="94%" style="max-width: 94%"></div>
+				</div>
+
+				<div class="sobre__mi__skills__progress">
+					<div class="subject">Hard work</div>
+					<div class="progress_bar"></div>
+						<div class="progress_line" value="94%" style="max-width: 94%"></div>
+				</div>
+
+				<div class="sobre__mi__skills__progress">
+					<div class="subject">Hard work</div>
+					<div class="progress_bar"></div>
+						<div class="progress_line" value="94%" style="max-width: 94%"></div>
+				</div>
+
+				<div class="sobre__mi__skills__progress">
+					<div class="subject">Hard work</div>
+					<div class="progress_bar"></div>
+						<div class="progress_line" value="94%" style="max-width: 94%"></div>
+				</div>
+
+				<div class="sobre__mi__skills__progress">
+					<div class="subject">Hard work</div>
+					<div class="progress_bar"></div>
+						<div class="progress_line" value="94%" style="max-width: 94%"></div>
+				</div>
+
+			</section>
+			
+			
+	
 	</section>
+		
+		
+
+	
 
 	
 
@@ -307,9 +157,9 @@
 
 	<!----------Proyectos------------>
 	<div class="proyectos" id="proyectos">
-		<div class="section__title" >
-			<h1>Proyectos</h1>
-		</div>
+		<div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
 		<div class="proyectos__galeria">
 			<div class="proyectos__linea">
 				<div class="proyectos__contenedor__imagenes">
