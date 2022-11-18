@@ -319,9 +319,9 @@ ul.show{
 	color: var(--white);
 	letter-spacing: 1px;
 	line-height: 28px;
-	font-size: 18px;
-	padding-bottom: 8px;
-	margin-bottom: 45px;
+	font-size: 20px;
+	padding-bottom: 8px 0px 8px 0px;
+	margin-bottom: 10px;
 	text-align: justify;
 }
 
@@ -425,7 +425,12 @@ main.formacion__row{
 
 	}
 }
+@media (min-width: 768px){
+	main.formacion__row{
+		grid-template-columns: 1fr;
 
+	}
+}
 
 
 
@@ -1086,11 +1091,7 @@ footer p:nth-child(2){
         font-size: 25px;
         padding-left: 35px;
     }
-	.qualification__sections{
-        display: grid;
-        grid-template-columns: .6fr;
-        justify-content: center;
-    }
+	
 }
 @media (max-width:1068px){
 	.sobre__mi__contenedor .sobre__mi__contents{
@@ -1103,12 +1104,12 @@ footer p:nth-child(2){
 	.sobre__mi__informacion{
 		padding-right: 10%;
 		grid-area:infoSect;
-		border: 1px solid red;
+		
 	}
 }
 @media (max-width:868px){
 	.sobre__mi__contenedor .sobre__mi__contents{
-		grid-template-areas: 'imageSect imageSect ' 'infoSect infoSect' 'skillSection skillSection';
+		grid-template-areas: 'imageSect imageSect ' 'infoSect infoSect' ;
 	}
 	
 }
@@ -1173,12 +1174,6 @@ footer p:nth-child(2){
 	h1{
 		font-size: 22px;
 	}
-	.proyectos__contenedor__imagenes{
-		width: 98%;
-
-	}
-	.proyectos__contenedor__imagenes .proyectos__imagen{
-		width: 90%;
-	}
+	
 
 }
