@@ -43,13 +43,5 @@ tabs.forEach(tab =>{
     })
 })
 
-//progress bar
-CSS.registerProperty({
-    name: "--p",
-    syntax: "<integer>",
-    initialValue: 0,
-    finalValue:40,
-    inherits: true,
-  });
 
 
