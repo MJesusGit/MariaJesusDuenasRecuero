@@ -1076,6 +1076,26 @@ footer p:nth-child(2){
         font-size: 25px;
         padding-left: 35px;
     }
+	.proyectos__contenedor__imagenes{
+		width: 90%;
+
+	}
+	.proyectos__contenedor__imagenes .proyectos__imagen{
+		width: 48%;
+	}
+	.contacto{
+		padding: 50px;
+	}
+	.contacto__container{
+		flex-direction: column;
+	}
+	.contacto__container .contacto__informacion{
+		margin-bottom: 40px;
+	}
+
+	.contacto__container .contacto__informacion, .contacto__contacto__form{
+		width:100% ;
+	}
 }
 
 /* For medium devices */
