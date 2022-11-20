@@ -23,7 +23,8 @@
 	--white:white;
 	--overlay-color:#666;
 	--bg-color:#020312;
-	--h1-font:5.2rem;
+	--h1-font:5rem;
+	--h1-font-hero:50px;
 	--h2-font:4.1rem;
 	--h3-font:25px;
 	--p-font:1.1rem;
@@ -204,7 +205,9 @@ nav ul li a:hover{
 	left:8%;
 	transform: translateY(-50%);
 }
-
+.inicio__presentacion h1{
+	font-size: var(--h1-font-hero);
+}
 .hero{
 	height: 100vh;
 	width: 100%;
@@ -976,7 +979,7 @@ main.formacion__row{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(29, 28, 28, 0.6);
+	background-color: rgba(29, 28, 28, 0.705);
 }
 
 
