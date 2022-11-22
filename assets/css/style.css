@@ -1179,7 +1179,7 @@ footer p:nth-child(2){
     }
 }
 
-@media screen and (min-width:858px){
+@media screen and (max-width:858px){
     .menu{
         height:65px;
     }
