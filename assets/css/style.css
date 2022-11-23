@@ -424,12 +424,11 @@ ul.show{
 	font-size: var(--h3-font);
     opacity: 0.8;
 	text-align: justify;
-}
+	}
 }
 
 
  
-
 /***********************************************
 *                                              *
 ************* 03.1.Qualification ***************
@@ -558,7 +557,7 @@ ul.show{
 	left:-15px;
 }
 
-@media screen and (max-width:600px){
+@media screen and (min-width:600px){
 	.timeline{
 		margin:50px auto;
 	}
@@ -651,6 +650,38 @@ ul.show{
 
 .qualification__link:hover{
     color: var(--overlay-color);
+}
+/***********************************************
+*                                              *
+**************** 01.soft_Skills ****************
+*                                              *
+***********************************************/
+
+.soft__skills_container{
+	position: relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.soft__skills_container .soft__skills__hexagon{
+	position: relative;
+	width: 350px;
+	height: 400px;
+	margin: 50px 20px 70px ;
+}
+
+.soft__skills_container .soft__skills__hexagon .soft__skills__shape{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background: var(--white);
+	clip-path: polygon(0 26%, 52% 0, 100% 26%, 100% 74%, 52% 100%, 0 74%);
+
+
 }
 
 
@@ -1169,7 +1200,7 @@ footer p:nth-child(2){
 *                                              *
 ***********************************************/
 
-@media screen and (min-width:952px){
+@media screen and (max-width:952px){
     .logo{
         font-size: 30px;
         padding-left: 35px;
@@ -1179,7 +1210,7 @@ footer p:nth-child(2){
     }
 }
 
-@media screen and (min-width:858px){
+@media screen and (max-width:480px){
     .menu{
         height:65px;
     }
@@ -1222,7 +1253,7 @@ footer p:nth-child(2){
 		grid-column-gap:20px;
 	}
 }
-@media (min-width:1068px){
+@media (max-width:1068px){
 	.sobre__mi__contenedor .sobre__mi__contents{
 		grid-template-areas: 'imageSect skillSection' 'infoSect infoSect';
 	}
@@ -1249,7 +1280,7 @@ footer p:nth-child(2){
 	
 }
 
-@media screen and (min-width:858px) and (orientation:landscape){
+@media screen and (max-width:858px) and (orientation:landscape){
  
     .menu_items{
         overflow: scroll;
