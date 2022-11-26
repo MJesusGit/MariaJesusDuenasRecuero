@@ -1349,9 +1349,9 @@ footer p:nth-child(2){
     }
 }
 
-@media screen and (max-width:480px){
+@media screen and (min-width:480px){
     .menu{
-        height:65px;
+        height: 85px;
     }
     .btn_menu{
         display:inline-flex;
@@ -1375,7 +1375,7 @@ footer p:nth-child(2){
         background: none;
     }
     .menu_items li a{
-        font-size: 20px;
+        font-size: 30px;
         color: #fff;
         font-weight:bold;
     }
@@ -1383,7 +1383,7 @@ footer p:nth-child(2){
         color: #f9004d;
     }
     .logo{
-        font-size: 25px;
+        font-size: 45px;
         padding-left: 35px;
     }
 	main.formacion__row{
@@ -1392,32 +1392,8 @@ footer p:nth-child(2){
 		grid-column-gap:20px;
 	}
 }
-@media (max-width:1068px){
-	.sobre__mi__contenedor .sobre__mi__contents{
-		grid-template-areas: 'imageSect skillSection' 'infoSect infoSect';
-	}
-	.sobre__mi__skills{
-		grid-template-columns:  1fr;
-		grid-gap:20px;
-	}
-	.sobre__mi__informacion{
-		padding-right: 10%;
-		grid-area:infoSect;
-	}
-}
-@media (max-width:868px){
-	.sobre__mi__contenedor .sobre__mi__contents{
-		grid-template-areas: 'imageSect imageSect ' 'infoSect infoSect' 'skillSection skillSection';
-	}
-	
-}
-@media (max-width:668px){
-	.sobre__mi__soft__skills{
-		grid-template-columns:1fr ;
 
-	}
-	
-}
+
 
 @media screen and (max-width:858px) and (orientation:landscape){
  
