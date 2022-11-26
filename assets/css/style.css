@@ -1017,7 +1017,7 @@ ul.show{
 	transform: scale(1.01) translateY(-5px);
 	cursor:pointer;
 }
-@media (min-width:979px){
+@media (min-width:960px){
 	:root {
 		--h1-font:4.2rem;
 		--h2-font:2.9rem;
@@ -1029,7 +1029,7 @@ ul.show{
 	}
 
 }
-@media (min-width:991px){
+@media (min-width:480px){
 	:root {
 		--h1-font:4.2rem;
 		--h2-font:2.9rem;
