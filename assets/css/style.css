@@ -23,8 +23,8 @@
 	--white:white;
 	--overlay-color:#666;
 	--bg-color:#020312;
-	--h1-font:5rem;
-	--h1-font-hero:50px;
+	--h1-font:6rem;
+	--h1-font-hero:5.5rem;
 	--h2-font:4.1rem;
 	--h3-font:25px;
 	--p-font:1.1rem;
@@ -225,8 +225,8 @@ ul.show{
     top:65px;
 }
 
+@media screen (max-width:900px){
 
-@media (max-width:991px){
 	.inicio__presentacion{
 		position: absolute;
 		top: 50%;
@@ -235,6 +235,55 @@ ul.show{
 	}
 	.inicio__presentacion h1{
 		font-size: var(--h1-font);
+	}
+	
+	.hero{
+		height: 100vh;
+		width: 100%;
+		background-image: url(../img/background.jpg);
+		background-position: center;
+	}
+	
+	ul.show{
+		top:75px;
+	}
+}
+
+
+
+
+@media screen and (min-width:480px){
+	.inicio__presentacion{
+		position: absolute;
+		top: 50%;
+		left:8%;
+		transform: translateY(-50%);
+	}
+	.inicio__presentacion h1{
+		font-size: var(--h1-font-hero);
+	}
+	.hero{
+		height: 100vh;
+		width: 100%;
+		background-image: url(../img/background.jpg);
+		background-position: center;
+	}
+	
+	ul.show{
+		top:75px;
+	}
+}
+
+
+@media screen and  (max-width:480px )and (min-width:0px){
+	.inicio__presentacion{
+		position: absolute;
+		top: 50%;
+		left:8%;
+		transform: translateY(-50%);
+	}
+	.inicio__presentacion h1{
+		font-size: var(--h1-font-hero);
 	}
 	.hero{
 		height: 100vh;
