@@ -98,8 +98,9 @@ h4{
 	border: 2px solid transparent;
 	font-weight: bold;
 	padding: 13px 30px;
-	border-radius: 30px;
+	border-radius: 50%;
 	transition: .4s; 
+
 }
 
 button:hover{
@@ -402,7 +403,29 @@ ul.show{
 	text-align: justify;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 992px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .about-left{
+        position: relative;
+    }
+    .about-left-content{
+        position: absolute;
+        width:80%
+    
+    }
+	.about-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+	font-size: var(--h3-font);
+    opacity: 0.8;
+	text-align: justify;
+	}
+}
+@media screen and (min-width: 1320px){
     .about-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -1214,8 +1237,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .buttonTop{
 	position:fixed ;
-	bottom:2.1rem;
-	right: 2.1rem;
+	bottom:1.1rem;
+	right: 1.1rem;
+	border-radius: 60%;
 	
 }
 
