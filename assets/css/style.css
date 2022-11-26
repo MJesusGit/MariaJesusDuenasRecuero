@@ -577,7 +577,7 @@ ul.show{
 	left:-15px;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:960px){
 	.timeline{
 		margin:50px auto;
 	}
@@ -622,7 +622,7 @@ ul.show{
 
 }
 
-@media screen and (min-width:480px){
+@media screen and (max-width:480px){
 	.timeline{
 		margin:50px auto;
 	}
@@ -666,6 +666,7 @@ ul.show{
 	}
 
 }
+
 
 
 .qualification__section{
@@ -799,6 +800,13 @@ ul.show{
 
 }
 
+@media screen and (max-width:480px){
+
+
+
+}
+
+
 
 /***********************************************
 *                                              *
@@ -888,7 +896,7 @@ ul.show{
 	margin-top: 10px;
 }
 .set .list .label{
-	font-size: 20px;
+	font-size: 30px;
 
 }
 
@@ -905,7 +913,7 @@ ul.show{
 	}
 }
 
-@media screen and (min-width: 600px){
+@media screen and (max-width: 600px){
 	.skill{
 		grid-template-columns: repeat(3,1fr);
 
@@ -916,11 +924,29 @@ ul.show{
 	
 
 }
-@media screen and (max-width: 312px){
+@media screen and (max-width: 480px){
 	
 	.skill{
 		grid-template-columns: 1fr;
 
+	}
+	.set .list{
+		padding-block:0px;
+		display: grid;
+		grid-template-columns: 1fr 50px;
+		color:var(--overlay-color);
+		text-transform: capitalize;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+	.set .list .label{
+		font-size: 10px;
+	
+	}
+	
+	.set:hover .list{
+		color:var(--text) ;
+	
 	}
 	
 }
@@ -1240,12 +1266,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	bottom:1.1rem;
 	right: 1.1rem;
 	border-radius: 60%;
-	
+	background-color: var(--main-color);
 }
 
 .buttonTop i{
 	color:var(--white);
-	background-color: var(--main-color);
+
 	font-size: 20px;
 	padding: 10px;
 	border-radius: 0.5rem;
