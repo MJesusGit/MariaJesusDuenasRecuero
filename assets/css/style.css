@@ -18,7 +18,7 @@
 *                                              *
 ***********************************************/
 :root {
-	--main-color:#f9004d;
+	--main-color:#e60074;
 	--second-color: #bc4063;  
 	--white:white;
 	--overlay-color:#666;
@@ -232,6 +232,8 @@ ul.show{
 	font-size: 1em;
 	padding: 1em 2em;
 	margin-top: 100px;
+	width: 25%;
+	height: 10%;
 	margin-bottom: 60px;
 	-webkit-appearance: none;
 	appearance: none;
@@ -243,6 +245,10 @@ ul.show{
 	position: relative;
 	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  }
+
+  .a {
+	text-align: center;
   }
   .bubbly-button:focus {
 	outline: 0;
@@ -311,7 +317,7 @@ ul.show{
 
 
 
-@media screen (max-width:900px){
+@media screen and(max-width:900px){
 
 	.inicio__presentacion{
 		position: absolute;
