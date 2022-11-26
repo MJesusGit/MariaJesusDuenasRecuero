@@ -27,7 +27,9 @@
 	--h1-font-hero:5.5rem;
 	--h2-font:4.1rem;
 	--h3-font:25px;
+	--h3-font-about:20px;
 	--p-font:1.1rem;
+
 }
 
 *{
@@ -224,6 +226,90 @@ nav ul li a:active{
 ul.show{
     top:65px;
 }
+.bubbly-button {
+	font-family: "Helvetica", "Arial", sans-serif;
+	display: inline-block;
+	font-size: 1em;
+	padding: 1em 2em;
+	margin-top: 100px;
+	margin-bottom: 60px;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #ff0081;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  }
+  .bubbly-button:focus {
+	outline: 0;
+  }
+  .bubbly-button:before, .bubbly-button:after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 140%;
+	height: 100%;
+	left: -20%;
+	z-index: -1000;
+	transition: all ease-in-out 0.5s;
+	background-repeat: no-repeat;
+  }
+  .bubbly-button:before {
+	display: none;
+	top: -75%;
+	background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+	background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+  .bubbly-button:after {
+	display: none;
+	bottom: -75%;
+	background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+	background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+  .bubbly-button:active {
+	transform: scale(0.9);
+	background-color: #e60074;
+	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  .bubbly-button.animate:before {
+	display: block;
+	animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  .bubbly-button.animate:after {
+	display: block;
+	animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+  
+  @keyframes topBubbles {
+	0% {
+	  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+	}
+	50% {
+	  background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+	}
+	100% {
+	  background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+	  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+	}
+  }
+  @keyframes bottomBubbles {
+	0% {
+	  background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+	}
+	50% {
+	  background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+	}
+	100% {
+	  background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+	  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+	}
+  }
+
+
 
 @media screen (max-width:900px){
 
@@ -353,11 +439,13 @@ ul.show{
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--main-color);
 }
+
 .about-left-content h3{
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 5px;
     margin-top: 1.2rem;
+	text-align: center;
 }
 .icons{
     background: #12192c;
@@ -406,6 +494,8 @@ ul.show{
 }
 .about-right h2{
     font-weight: 600;
+	font-size: var(--h3-font-about);
+	text-align: justify;
 }
 .about-btns{
     display: flex;
@@ -509,6 +599,7 @@ ul.show{
 	position: relative;
 	max-width: 1200px;
 	margin:100px auto;
+	
 }
 
 .timeline .container{
@@ -675,6 +766,7 @@ ul.show{
 @media screen and (max-width:480px){
 	.timeline{
 		margin:50px auto;
+		
 	}
 	.timeline::after{
 		left:31px;
@@ -750,7 +842,7 @@ ul.show{
     display: block;
 }
 
-.qualification__button.qualification__active{
+.qualification__button .qualification__active{
     color: var(--main-color);
 	margin-top: 10px;
 }
@@ -767,6 +859,12 @@ ul.show{
 .qualification__link:hover{
     color: var(--overlay-color);
 }
+.qualification__content__work h2{
+	color: var(--white);
+}
+
+
+
 /***********************************************
 *                                              *
 **************** 01.soft_Skills ****************
@@ -884,8 +982,8 @@ ul.show{
 
 .skill .set{
 	padding: 24px;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 150px;
+	padding-right: 130px;
 	border-radius: 16px;
 	cursor: pointer;
 	background: rgba(69, 69, 69, 0.267);
@@ -1021,7 +1119,7 @@ ul.show{
 	margin-bottom: 1.5rem ;
 }
 .row{
-	padding: 25px;
+	padding: 25px 25px 15px 25px;
 	background: #12141c;
 	border-radius:0.5rem ;
 	transition: all .40s ease;
@@ -1037,15 +1135,21 @@ ul.show{
 
 .row h3{
 	font-size: 16px;
-	font-weight: 700;
+	
 }
 
 .row h6{
-	color: var(--second-color);
+	color: var(--main-color);
 	font-size: 22px;
 	font-weight: 500;
 	letter-spacing: 1px;
 }
+
+.footer__proyect{
+	color: var(--overlay-color);
+}
+
+
 
 .row-icon i{
 	font-size: 21px;
@@ -1053,10 +1157,31 @@ ul.show{
 
 }
 
+
 .row:hover{
 	transform: scale(1.01) translateY(-5px);
 	cursor:pointer;
 }
+
+.label {
+	color: white;
+	padding: 4px;
+	text-align: right;
+	border-radius: 8px;
+	font-size: 14px;
+	margin-right: 5px;
+}
+  
+  .Java {background-color: #aa7004;} /* Green */
+  .csharp {background-color: #6a0fd1ee;} /* Blue */
+  .Python {background-color: #3359d6cb;} /* Orange */
+  .Angular {background-color: #f11809;} /* Red */
+  .Typescript {background-color: #c1d40eb7; } /* Gray */
+  .figma{background-color: #bc4063;}
+
+
+
+
 @media (min-width:960px){
 	:root {
 		--h1-font:4.2rem;

@@ -1,19 +1,7 @@
-/*Animacion menu responsive*/
-
-addEventListener('DOMContentLoaded',() => {
-    const btn_menu = document.querySelector('.btn_menu')
-    if(btn_menu){
-        btn_menu.addEventListener('click', () => {
-            const menu_items = document.querySelector('.menu_items')
-            menu_items.classList.toggle('show')
-        })
-
-    }
-})
 
 //Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
 function seleccionar(links) {
-    var opciones = document.querySelectorAll('#links  a');
+    var opciones = document.querySelectorAll('#links a');
     opciones[0].className = "";
     opciones[1].className = "";
     opciones[2].className = "";
@@ -22,6 +10,17 @@ function seleccionar(links) {
     links.className = "seleccionado";
 }
 
+/*Animacion menu responsive*/
+ addEventListener('DOMContentLoaded',() => {
+     const btn_menu = document.querySelector('.btn_menu')
+    if(btn_menu){
+         btn_menu.addEventListener('click', () => {
+             const menu_items = document.querySelector('.menu_items')
+             menu_items.classList.toggle('show')
+         })
+
+    }
+ })
 
 
 
@@ -29,7 +28,6 @@ function seleccionar(links) {
 
 
 //apartado de tabs-formacion
-
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll("[data-target]"),
     tabContents = document.querySelectorAll("[data-content]")
@@ -49,8 +47,9 @@ tabs.forEach(tab =>{
     })
 })
 
-//Scroll to button
 
+
+//Scroll to button
 let buttonTop= document.getElementById("topButton");
 window.onscroll= function(){scrollFunction()};
 
@@ -68,3 +67,20 @@ function topFunction(){
 }
 
 
+var animateButton = function(e) {
+
+    e.preventDefault;
+    //reset animation
+    e.target.classList.remove('animate');
+    
+    e.target.classList.add('animate');
+    setTimeout(function(){
+      e.target.classList.remove('animate');
+    },700);
+  };
+  
+  var bubblyButtons = document.getElementsByClassName("bubbly-button");
+  
+  for (var i = 0; i < bubblyButtons.length; i++) {
+    bubblyButtons[i].addEventListener('click', animateButton, false);
+  }
