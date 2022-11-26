@@ -91,7 +91,7 @@ h4{
 	color: var(--white);
 }
 
-button{
+/* button{
 	background-color:#f9004d;
 	color: white;
 	text-decoration: none;
@@ -106,7 +106,8 @@ button:hover{
 	background-color: transparent;
 	border: 2px solid #f9004d;
 	cursor: pointer;
-}
+} */
+
 
 
 /***********************************************
@@ -184,6 +185,10 @@ nav ul li a:hover{
 	color: var(--main-color);
 	transition: .4s;
 }
+
+nav ul li a:active{
+	color:var(--main-color)
+}
 .btn_menu{
     margin-right: 30px;
     font-size: 25px;
@@ -219,6 +224,7 @@ ul.show{
     top:65px;
 }
 
+
 @media (max-width:991px){
 	.inicio__presentacion{
 		position: absolute;
@@ -240,12 +246,6 @@ ul.show{
 		top:75px;
 	}
 }
-
-
-
-
-
-
 
 
 /***********************************************
@@ -295,8 +295,6 @@ ul.show{
     width: 200px;
     height: 200px;
 }
-
-
 
 .about-left-content h2{
     font-size: 2rem;
@@ -404,7 +402,7 @@ ul.show{
 	text-align: justify;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 480px){
     .about-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -428,7 +426,6 @@ ul.show{
 }
 
 
- 
 /***********************************************
 *                                              *
 ************* 03.1.Qualification ***************
@@ -557,7 +554,52 @@ ul.show{
 	left:-15px;
 }
 
-@media screen and (min-width:600px){
+@media screen and (max-width:600px){
+	.timeline{
+		margin:50px auto;
+	}
+	.timeline::after{
+		left:31px;
+	}
+
+	.timeline .container{
+		width:100%;
+		padding-left: 80px;
+		padding-right: 25px;
+	}
+
+	.text-box{
+		font-size: 13px;
+	}
+
+	.text-box small{
+		margin-bottom: 10px;
+	}
+
+	.timeline .right-container{
+		left:0;
+
+	}
+	.timeline .left-container{
+		left:0;
+
+	}
+
+	.timeline .left-container img, .timeline .right-container img{
+		left:10px ;
+
+	}
+
+	.left-container-arrow, .right-container-arrow{
+		border-right: 15px solid var(--white) ;
+		border-left:0;
+		left:-15px;
+
+	}
+
+}
+
+@media screen and (min-width:480px){
 	.timeline{
 		margin:50px auto;
 	}
@@ -656,34 +698,83 @@ ul.show{
 **************** 01.soft_Skills ****************
 *                                              *
 ***********************************************/
+.soft__skills__container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-.soft__skills_container{
+.soft__skills__container .container{
 	position: relative;
-	display:flex;
+	width: 1100px;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	padding: 30px;
 }
 
-.soft__skills_container .soft__skills__hexagon{
+.soft__skills__container .container .card{
 	position: relative;
-	width: 350px;
-	height: 400px;
-	margin: 50px 20px 70px ;
-}
-
-.soft__skills_container .soft__skills__hexagon .soft__skills__shape{
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height: 100%;
+	max-width: 300px;
+	height:215px;
 	background: var(--white);
-	clip-path: polygon(0 26%, 52% 0, 100% 26%, 100% 74%, 52% 100%, 0 74%);
-
-
+	margin:30px 10px ;
+	padding:20px 15px ;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px  rgba(0, 0, 0, .6);
+	transition: 0.3s ease-in-out;
 }
 
+
+.soft__skills__container .container .card:hover{
+	height: 420px;
+}
+
+.soft__skills__container .container .card .imgBx{
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top:-60px;
+	left: 20px;
+	box-shadow: 0 5px 20px rgba( 0, 0, 0, 0.2 ) ;
+	z-index:1;
+}
+
+.soft__skills__container .container .card .imgBx img{
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.soft__skills__container .container .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align:justify;
+	color:var(--bg-color);
+	visibility: hidden;
+	opacity:0;
+	transition:0.3s ease-in-out;
+}
+
+.soft__skills__container .container .card:hover .content{
+	visibility: visible;
+	opacity:1;
+	margin-top: -40px;
+	transition-delay:0.3;
+}
+.soft__skills__container .container .card .content h2{
+	font-size: var(--h3-font);
+	text-align: center;
+	padding-bottom: 10px;
+	color: var(--second-color);
+}
+.soft__skills__container .container .card .content p{
+	font-size: var(--p-font);
+	padding-bottom: 10px;
+
+}
 
 
 /***********************************************
@@ -931,7 +1022,7 @@ ul.show{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(29, 28, 28, 0.705);
+	
 }
 
 
@@ -952,6 +1043,7 @@ ul.show{
 	width: 30%;
 	display:flex;
 	flex-direction: column;
+	padding-left: 55px;
 	
 }
 
@@ -978,7 +1070,7 @@ ul.show{
 
 .contacto__container .contacto__informacion .contacto__box .contacto__texto h3{ 
 	display: flex;
-	margin-left: 20px;
+	margin-left: 16px;
 	align-content: center;
 	color: #ffffff;
 	flex-direction: column;
@@ -1102,10 +1194,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 	}
 
-	.contacto__contacto__form{
+	/* .contacto__contacto__form{
 		width: 50%;
 		margin-top: 5%;
-	}	
+	}	 */
 
 	.contacto__container .contacto__informacion{
 		margin-bottom: 40px;
@@ -1120,17 +1212,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 
-
-
-
-.top{
+.buttonTop{
 	position:fixed ;
 	bottom:2.1rem;
 	right: 2.1rem;
 	
 }
 
-.top i{
+.buttonTop i{
 	color:var(--white);
 	background-color: var(--main-color);
 	font-size: 20px;

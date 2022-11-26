@@ -22,6 +22,12 @@ function seleccionar(links) {
     links.className = "seleccionado";
 }
 
+
+
+
+
+
+
 //apartado de tabs-formacion
 
 /*==================== QUALIFICATION TABS ====================*/
@@ -43,5 +49,22 @@ tabs.forEach(tab =>{
     })
 })
 
+//Scroll to button
+
+let buttonTop= document.getElementById("topButton");
+window.onscroll= function(){scrollFunction()};
+
+function scrollFunction(){
+    if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+        buttonTop.style.display="block";
+    }else{
+        buttonTop.style.display="none";
+    }
+}
+
+function topFunction(){
+    document.body.scrollTop=0; //safari
+    document.documentElement.scrollTop=0;//chrome, firefox ,ie y opera.
+}
 
 
