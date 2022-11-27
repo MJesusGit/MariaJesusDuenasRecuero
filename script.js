@@ -66,7 +66,7 @@ function topFunction(){
     document.documentElement.scrollTop=0;//chrome, firefox ,ie y opera.
 }
 
-
+//download cv with animation
 var animateButton = function(e) {
 
     e.preventDefault;
@@ -84,3 +84,24 @@ var animateButton = function(e) {
   for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
   }
+
+
+//active link
+const sections = document.querySelectorAll('section[id]');
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+
+    sections.forEach((current)=>{
+      const  sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop-50;
+      const sectionId = current.getAttribute('id');
+
+      if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        document.querySelector('.nav__menu a[href *='+sectionId +']').classList.add('active__link');
+      }else{
+        document.querySelector('.nav__menu a[href*='+sectionId +']').classList.remove('active__link');
+      }
+    })
+}
+
+window.addEventListener('scroll',scrollActive);

@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>María Jesús Dueñas Recuero</title>
-	<mewta name="viewport" content="width=device-width,initial-scale=1.0"></mewta>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/html" href="google25c2c4fcd3472ff0.html">
 	<link rel="stylesheet" type="text/html" href="googleb0a6f4ffdd3f7b40.html">
 	<link rel="stylesheet" href="https://fontawesome.com" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -22,7 +24,7 @@
 </script>
 <body>
 	<!----hero Section start---->
-	<div class="hero" id="inicio">
+	<!-- <div class="hero" id="inicio">
 		<nav class="menu__navegacion">
 			<h2  class="logo">/<span>MJ</span>/</h2>
 			<ul class="menu_items" id="links">
@@ -41,117 +43,148 @@
 		<div class="inicio__presentacion">
 			<h4>Hola, mi nombre es</h4>
 			<h1>María Jesús <br><span>Dueñas Recuero</span></h1>
-<!-- 		
-			<button type="button">Descargar CV</button> -->
 			<a class="bubbly-button" href="assets/doc/DueñasRecuero_Mariajesus__CV.pdf" download="María Jesús Dueñas" style="text-decoration:none" style="text-align: center;" >Descargar CV</a>
 		</div>
-	</div>
-	<!----About section start---->
-	<section class="sobre__mi__section" id="sobremi">
-		<div class = "about-wrapper">
-			<div class = "about-left">
-			  <div class = "about-left-content">
-				<div>
-				  <div class = "shadow">
-					<div class = "about-img">
-					  <img src = "assets/img/profile.png" alt = "about image">
-					</div>
-				  </div>
-				  <h2>María Jesús Dueñas Recuero</h2>
-				  <h3>¡Soy ingeniera informática y futura UX/UI designer!</h3>
-				</div>
-			  </div>
+	</div> -->
+	<header class="header" id="header">
+		<nav class="nav container">
+			<h2  class="nav__logo">/<span>MJ</span>/</h2>
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list" >
+					<li class="nav__item"><a href="#inicio" class="active__link" ><i class='bx bx-home-alt nav__icon'></i><span class="nav__name">Inicio</span></a></li>
+					<li class="nav__item"><a href="#sobremi"  ><i class='bx bx-user nav__icon' ></i><span class="nav__name">Sobre mi</span></a></li>
+					<li class="nav__item"><a href="#formacion"  ><i class='bx bxs-graduation nav__icon' ></i><span class="nav__name">Formación</span></a></li>
+					<li class="nav__item"><a href="#habilidades" ><i class="bx bx-home-alt nav__icon"></i><span class="nav__name">Habilidades</span></a></li>
+					<li class="nav__item"><a href="#conocimientos"  ><i class="bx bx-home-alt nav__icon"></i><span class="nav__name">Conocimientos</span></a></li>
+					<li class="nav__item"><a href="#portfolio"  ><i class="bx bx-home-alt nav__icon"></i><span class="nav__name">Portfolio</span></a></li>
+					<li class="nav__item"><a href="#contacto"  ><i class="bx bx-home-alt nav__icon"></i><span class="nav__name">Contacto</span></a></li>
+				</ul>
 			</div>
-			<div class = "about-right">
-			  <div class = "about-para">
-				<h2>INGENIERIA INFORMÁTICA | TECNOLOGÍAS DE LA INFORMACIÓN</h2><br>
-				<p>Estudiante de ingeniería informática, cursando mi último año de grado. Habituada a entregas con plazos estricto y apasionada del desarrollo software centrado en el usuario.
-				<p>Me gusta aprender de mi entorno y de cada una de las personas con las que trabajo.</p>
-				<p>Con ganas de seguir aprendiendo y especializándome en la experiencia e interfaces de usuario, así como, desarrollo frontend.</p>
-			  </div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" id="inicio">
+			<div class="inicio__presentacion">
+				<h4>Hola, mi nombre es</h4>
+				<h1>María Jesús <br><span>Dueñas Recuero</span></h1>
+				<a class="bubbly-button" href="assets/doc/DueñasRecuero_Mariajesus__CV.pdf" download="María Jesús Dueñas" style="text-decoration:none" style="text-align: center;" >Descargar CV</a>
 			</div>
-		  </div>
-	</section>
+		</section>
 		
+        <section class="sobre__mi__section" id="sobremi">
+				<div class = "about-wrapper">
+					<div class = "about-left">
+						<div class = "about-left-content">
+							<div>
+							<div class = "shadow">
+								<div class = "about-img">
+								<img src = "assets/img/profile.png" alt = "about image">
+								</div>
+							</div>
+							<h2>María Jesús Dueñas Recuero</h2>
+							<h3>¡Soy ingeniera informática y futura UX/UI designer!</h3>
+							</div>
+						</div>
+					</div>
+					<div class = "about-right">
+						<div class = "about-para">
+							<h2>INGENIERIA INFORMÁTICA | TECNOLOGÍAS DE LA INFORMACIÓN</h2><br>
+							<p>Estudiante de ingeniería informática, cursando mi último año de grado. Habituada a entregas con plazos estricto y apasionada del desarrollo software centrado en el usuario.
+							<p>Me gusta aprender de mi entorno y de cada una de las personas con las que trabajo.</p>
+							<p>Con ganas de seguir aprendiendo y especializándome en la experiencia e interfaces de usuario, así como, desarrollo frontend.</p>
+						</div>
+					</div>
+				</div>
+        </section>
+       
+
+       
+        <section class="container section section__height" id="formacion">
+			<div class="main-text">
+				<h1>Mi formación</h1>
+				<h4>Trayectoria académica y profesional</h4>
+			</div>
+			<div class="qualification__container container">
+				<div class="qualification__tabs">
+					<div class="qualification__button button--flex qualification__active" data-target="#educacion">
+						<i class="fa fa-graduation-cap"></i>
+						Educación
+					</div>
+					<div class="qualification__button button--flex" data-target="#cursos">
+						<i class="fa fa-bookmark"></i>
+						Cursos
+					</div>
+					<div class="qualification__button button--flex" data-target="#trabajo">
+						<i class="fa fa-briefcase"></i>
+						Trabajo
+					</div>
+				</div>
+				<div class="qualification__sections">
+					<div class="qualification__content qualification__active" data-content id="educacion">
+						<div class="timeline">
+							<div class="container right-container">
+								<img src="assets/img/qualification/birrete.png" alt="birrete">
+								<div class="text-box">
+									<h2>Título inglés B1</h2>
+									<small>2016</small>
+									<p><a href="https://www.cambridgeenglish.org/es/">Cambridge</a><br>Ciudad Real, España</p>
+									<span class="right-container-arrow"></span>
+								</div>
+							</div>
+							<div class="container left-container">
+								<img src="assets/img/qualification/birrete.png" alt="birrete">
+								<div class="text-box">
+									<h2>Bachillerato tecnológico</h2>
+									<small>2016-2018</small>
+									<div class="logros">
+										<i class="fa fa-medal">Buen expediente academico | Sobresaliente (9,3)</i>
+									</div>
+									<p><a href="https://salesianospuertollano.com">Colegio San Juan Bosco (Salesianos)</a><br>Puertollano, Ciudad Real</p>
+									<span class="left-container-arrow"></span>
+								</div>
+							</div>
+							<div class="container right-container">
+								<img src="assets/img/qualification/birrete.png" alt="birrete">
+								<div class="text-box">
+									<h2>Grado en ingeniería informática</h2>
+									<small>2018-Actualidad</small>
+									<div class="logros">
+										<i class="fa fa-medal">Matrícula de honor en Interacción persona ordenador II</i>
+									</div>
+									<p><a href="https://esi.uclm.es">Escuela superior informática (Bilingüe)</a>, Universidad de Castilla La Mancha</p>
+									<p><a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/intensificaciones/">Tecnologías de la información</a><br></p>
+									<p><a href="">Ciudad Real</a><br></p>
+									<span class="right-container-arrow"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="qualification__content__work" data-content id="trabajo">
+						<h2>¡Sé el primero en darme una oportunidad!</h2>
+					</div>
+				</div>
+			</div>
+        </section>
+        <section class="container section section__height" id="habilidades">
+            <h2 class="section__title">Habilidades</h2>
+        </section>
+    </main>
+
+
+
+
+
+	
+
+	<section class="sobre__mi__section" id="sobremi">
+		
+	</section>
 	<!----------Formación------------>
 	<section class="qualification__section" id="formacion">
-		<div class="main-text">
-			<h1>Mi formación</h1>
-			<h4>Trayectoria académica y profesional</h4>
-		</div>
-		<div class="qualification__container container">
-			<div class="qualification__tabs">
-				<div class="qualification__button button--flex qualification__active" data-target="#educacion">
-					<i class="fa fa-graduation-cap"></i>
-					Educación
-				</div>
-
-				<div class="qualification__button button--flex" data-target="#cursos">
-					<i class="fa fa-bookmark"></i>
-					Cursos
-				</div>
-
-				<div class="qualification__button button--flex" data-target="#trabajo">
-					<i class="fa fa-briefcase"></i>
-					Trabajo
-				</div>
-	
-			</div>
-
-			<div class="qualification__sections">
-				<div class="qualification__content qualification__active" data-content id="educacion">
-					<div class="timeline">
-						<div class="container right-container">
-							<img src="assets/img/qualification/birrete.png" alt="birrete">
-							<div class="text-box">
-								<h2>Título inglés B1</h2>
-								<small>2016</small>
-								<p><a href="https://www.cambridgeenglish.org/es/">Cambridge</a><br>Ciudad Real, España</p>
-								<span class="right-container-arrow"></span>
-							</div>
-						</div>
-						<div class="container left-container">
-							<img src="assets/img/qualification/birrete.png" alt="birrete">
-							<div class="text-box">
-								<h2>Bachillerato tecnológico</h2>
-								<small>2016-2018</small>
-								<div class="logros">
-									<i class="fa fa-medal">Buen expediente academico | Sobresaliente (9,3)</i>
-								</div>
-								<p><a href="https://salesianospuertollano.com">Colegio San Juan Bosco (Salesianos)</a><br>Puertollano, Ciudad Real</p>
-								<span class="left-container-arrow"></span>
-							</div>
-						</div>
-						<div class="container right-container">
-							<img src="assets/img/qualification/birrete.png" alt="birrete">
-							<div class="text-box">
-								<h2>Grado en ingeniería informática</h2>
-								<small>2018-Actualidad</small>
-								<div class="logros">
-									<i class="fa fa-medal">Matrícula de honor en Interacción persona ordenador II</i>
-								</div>
-								<p><a href="https://esi.uclm.es">Escuela superior informática (Bilingüe)</a>, Universidad de Castilla La Mancha</p>
-								<p><a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/intensificaciones/">Tecnologías de la información</a><br></p>
-								<p><a href="">Ciudad Real</a><br></p>
-								<span class="right-container-arrow"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="qualification__content__work" data-content id="trabajo">
-					<h2>¡Sé el primero en darme una oportunidad!</h2>
-				</div>
-
-			</div> 
-
-
-		</div>
-
-
 		
 	</section>
-	
 	<!----------Habilidades------------>
 	<section class="soft__skills" id="habilidades">
 		<div class="main-text">
@@ -239,8 +272,6 @@
 			</div>
 		</div>
 	</section>
-
-
 	<!----------conocimientos------------>
 	<section class="conocimientos" id="conocimientos">
 		<div class="main-text">
@@ -264,7 +295,6 @@
 					<label>JavaScript</label>
 				</div>
 			</div>
-
 				<div class="set">
 					<span class="fas fa-file-code"></span>
 					<header>Backend</header>
@@ -291,7 +321,6 @@
 					</div>
 					
 				</div>
-
 					<div class="set">
 						<span class="fas fa-database"></span>
 						<header>Bases de datos</header>
@@ -299,10 +328,7 @@
 							<img src="assets/img/skills/mysql.png" alt="Mysql">
 							<label>Mysql</label>
 						</div>
-						
 					</div>
-
-						
 						<div class="set">
 							<span class="fas fa-draw-polygon"></span>
 							<header>Prototipado</header>
@@ -329,7 +355,6 @@
 							</div>
 							
 						</div>
-
 						<div class="set">
 							<span class="fa fa-plus"></span>
 							<header>Programas de edición</header>
@@ -374,12 +399,8 @@
 								<label>Linux <br>(Ubuntu, Kali,Zorin...)</label>
 							</div>
 						</div>
-
 			</div>
-
 		</div>
-
-
 	</section>
 
 
