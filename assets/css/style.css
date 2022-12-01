@@ -247,10 +247,10 @@ i.nav__icon {
 
 
 @media screen and (max-width:992px){
-	/* .container{
+	.container{
 		margin-right: 1rem;
 		margin-left: 0.5rem;
-	} */
+	}
 }
 
 @media screen and (max-width:768px){
@@ -287,7 +287,7 @@ i.nav__icon {
      }
 }
 
-@media screen and (min-width:576px){
+@media screen and (max-width:576px){
     .nav__list{
         justify-content: center;
 		padding: 2px;
@@ -299,6 +299,7 @@ span  {
 	color: var(--white);
 	text-transform: capitalize;
 }
+
 
 
 /***********************************************
