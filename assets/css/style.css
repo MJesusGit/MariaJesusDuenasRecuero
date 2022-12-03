@@ -11,8 +11,6 @@
 ************************************************/
 
 
-
-
 /***********************************************
 *                                              *
 ********* 00.Caracteisticas generales **********
@@ -20,8 +18,9 @@
 ***********************************************/
 :root {
 	--main-color:#e60074;
-	--second-color: #bc4063;  
+	--second-color: #bc4063;
 	--white:white;
+	--light-purple:#C78AC1;
 	--overlay-color:#666;
 	--bg-color:#020312;
 	--h1-font:6rem;
@@ -53,7 +52,7 @@ section[id]{
 body{
     font-family: 'Montserrat';
 	background: var(--bg-color);
-	
+
 }
 h1{
 	color: var(--white);
@@ -94,24 +93,6 @@ h4{
 	color: var(--white);
 }
 
-/* button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 50%;
-	transition: .4s; 
-
-}
-
-button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
-} */
-
 
 
 /***********************************************
@@ -121,7 +102,7 @@ button:hover{
 ***********************************************/
 /* .container{
 	max-width: 968px;
-	margin: auto; 
+	margin: auto;
 } */
 
 ul{
@@ -131,6 +112,7 @@ ul{
 
 a{
     text-decoration: none;
+	color: var(--white);
 }
 
 .section{
@@ -164,10 +146,10 @@ a{
     text-align:center;
     padding: 10px;
     z-index: 100;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.192);
     border-radius: 0px;
-    border: 0px solid rgba( 255, 255, 255, 0.12 );
-	
+    border: 0px solid rgba(255, 255, 255, 0.226);
+
 }
 
 .nav{
@@ -194,12 +176,12 @@ a{
 }
 
 .nav__icon{
-	font-size: 1.5rem;
-	
+	font-size: 1rem;
+
 
 }
 
-.nav__list, 
+.nav__list,
 .nav__link{
 	display: flex;
 }
@@ -214,7 +196,8 @@ a{
 .nav__link{
 	flex-direction: column;
 	align-items: center;
-	color: var(--overlay-color);
+	opacity: 0.4;
+	color: var(--light-purple);
 	row-gap: 0.25rem;
 }
 
@@ -222,9 +205,9 @@ a{
 	color:var(--main-color);
 }
 
-/* i.nav__icon {
+i.nav__icon {
 	display:none;
-} */
+}
 
 .active__link{
     position:relative;
@@ -266,20 +249,19 @@ a{
 		border-radius:1.25rem  1.25rem 0 0;
 		transition: .4s;
 		box-shadow:0 -1px 12px rgba(161, 159, 159, 0.25) ;
-		background: var(--bg-color);
-		
+		background: var(--light-purple);
+
 	}
 	.nav{
 		height:3rem ;
 		font-size: 13px;
 		padding: 5px;
 		text-transform: capitalize;
-		
+
 	}
 	i.nav__icon{
 		display:block;
 		font-size: 20px;
-
 	}
 
      .section__title{
@@ -291,7 +273,7 @@ a{
     .nav__list{
         justify-content: center;
 		padding: 2px;
-		font-size: 10px;
+		font-size: 15px;
     }
 }
 
@@ -310,7 +292,7 @@ span  {
 .inicio__presentacion{
 	position: absolute;
 	top: 50%;
-	left:8%;
+	left:0%;
 	transform: translateY(-50%);
 }
 
@@ -323,8 +305,6 @@ span  {
 	color: var(--main-color);
 
 }
-
-
 
 .inicio__presentacion h1{
 	font-size: var(--h1-font-hero);
@@ -339,18 +319,18 @@ span  {
 ul.show{
     top:65px;
 }
+
 .bubbly-button {
 	display: inline-block;
 	padding: 1em 2em;
 	margin-top: 100px;
-	width: 18%;
+	width: 80%;
 	height: 20%;
 	margin-bottom: 60px;
 	appearance: none;
 	background-color: #ff0081;
 	color: #fff;
-	border-radius: 30px;
-	border: none;
+	border-radius: 10px;
 	cursor: pointer;
 	position: relative;
 	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
@@ -360,11 +340,13 @@ ul.show{
 
   .inicio__presentacion a {
 	text-align: center;
-	font-size: 10px;
+	font-size: 15px;
+	text-transform: uppercase;
   }
   .bubbly-button:focus {
 	outline: 0;
   }
+
   .bubbly-button:before, .bubbly-button:after {
 	position: absolute;
 	content: "";
@@ -401,7 +383,7 @@ ul.show{
 	display: block;
 	animation: bottomBubbles ease-in-out 0.75s forwards;
   }
-  
+
   @keyframes topBubbles {
 	0% {
 	  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
@@ -440,20 +422,18 @@ ul.show{
 	.inicio__presentacion h1{
 		font-size: var(--h1-font);
 	}
-	
+
 	.hero{
 		height: 100vh;
 		width: 100%;
 		background-image: url(../img/background.jpg);
 		background-position: center;
 	}
-	
+
 	ul.show{
 		top:75px;
 	}
 }
-
-
 
 
 @media screen and (min-width:480px){
@@ -472,13 +452,14 @@ ul.show{
 		background-image: url(../img/background.jpg);
 		background-position: center;
 	}
-	
+
 	ul.show{
 		top:75px;
 	}
-	.bubbly-button {
+
+	 .bubbly-button {
 		display: inline-block;
-		font-size: 16px;
+		font: size 20px;px;
 		padding: 1em 2em;
 		margin-top: 100px;
 		margin-bottom: 60px;
@@ -494,7 +475,7 @@ ul.show{
 		transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 		box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 		width: 200px;
-		
+
 	  }
 }
 
@@ -515,9 +496,12 @@ ul.show{
 		background-image: url(../img/background.jpg);
 		background-position: center;
 	}
-	
+
 	ul.show{
 		top:75px;
+	}
+	.inicio__presentacion .a{
+		font-size:var(--h3-font-about) ;
 	}
 }
 
@@ -541,7 +525,7 @@ ul.show{
     background: #12192c;
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
-    
+
     border-radius: 12px 12px 0 0;
 }
 .about-left-content{
@@ -585,32 +569,8 @@ ul.show{
     margin-top: 1.2rem;
 	text-align: center;
 }
-.icons{
-    background: #12192c;
-    display: flex;
-    justify-content: center;
-    padding: 0.8rem 0;
-    border-radius: 0 0 12px 12px;
-}
-.icons li{
-    list-style-type: none;
-    background: var(--main-color);
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    margin: 0 0.5rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-}
-.icons li:hover{
-    background: #edffec;
-    color: #000;
-}
+
+
 .about-right{
     background: #12192c;
     height: 95vh;
@@ -621,7 +581,7 @@ ul.show{
     padding: 0rem 5rem ;
     text-align: center;
     color:#fff;
-	
+
 }
 .about-right h1{
     font-size: 5rem;
@@ -635,10 +595,7 @@ ul.show{
 	font-size: var(--h3-font-about);
 	text-align: justify;
 }
-.about-btns{
-    display: flex;
-    margin: 2rem 0;
-}
+
 .btn{
     border: none;
     font-size: 0.9rem;
@@ -653,28 +610,12 @@ ul.show{
     cursor: pointer;
     color:#fff
 }
-.btn.btn-pink{
-    background: var(--main-color);
-    color: #fff;
-    border-color: var(--main-color);
-    transition: all 0.5s ease-in-out;
-}
-.btn.btn-pink:hover{
-    background: transparent;
-    border-color: #fff;
-    color: #fff;
-}
-.btn.btn-white{
-    transition: all 0.5s ease-in-out;
-}
-.btn.btn-white:hover{
-    background: var(--main-color);
-    border-color: var(--main-color);
-    color: #fff;
-}
+
 .about-para p{
     font-weight: 300;
-    padding: 0.5rem;
+    padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	padding-bottom: 0.3rem;
 	font-size: var(--h3-font);
     opacity: 0.8;
 	text-align: justify;
@@ -692,7 +633,7 @@ ul.show{
     .about-left-content{
         position: absolute;
         width:80%
-    
+
     }
 	.about-para p{
     font-weight: 300;
@@ -715,7 +656,7 @@ ul.show{
     .about-left-content{
         position: absolute;
         width:80%
-    
+
     }
 	.about-para p{
     font-weight: 300;
@@ -737,7 +678,7 @@ ul.show{
 	position: relative;
 	max-width: 1200px;
 	margin:100px auto;
-	
+
 }
 
 .timeline .container{
@@ -757,7 +698,7 @@ ul.show{
 		opacity:1;
 		transform: translateY(0px);
 	}
-	
+
 }
 .timeline .container:nth-child(1){
 	animation-delay: 0s;
@@ -904,7 +845,7 @@ ul.show{
 @media screen and (max-width:480px){
 	.timeline{
 		margin:50px auto;
-		
+
 	}
 	.timeline::after{
 		left:31px;
@@ -1115,7 +1056,7 @@ ul.show{
 	gap:2rem;
 	margin: 10rem 40px 0 40px;
 }
-	
+
 
 
 .skill .set{
@@ -1184,7 +1125,7 @@ ul.show{
 @media screen and (max-width: 1326px){
 	.skill{
 		grid-template-columns:repeat(3,3fr);
-		
+
 
 	}
 }
@@ -1197,11 +1138,11 @@ ul.show{
 	.portfolio__content{
 		grid-template-columns: 1fr;
 	}
-	
+
 
 }
 @media screen and (max-width: 480px){
-	
+
 	.skill{
 		grid-template-columns: 1fr;
 
@@ -1217,14 +1158,14 @@ ul.show{
 	}
 	.set .list .label{
 		font-size: 10px;
-	
+
 	}
-	
+
 	.set:hover .list{
 		color:var(--text) ;
-	
+
 	}
-	
+
 }
 
 
@@ -1261,7 +1202,7 @@ ul.show{
 	background: #12141c;
 	border-radius:0.5rem ;
 	transition: all .40s ease;
-	
+
 }
 
 .main-row{
@@ -1273,7 +1214,7 @@ ul.show{
 
 .row h3{
 	font-size: 16px;
-	
+
 }
 
 .row h6{
@@ -1309,7 +1250,7 @@ ul.show{
 	font-size: 14px;
 	margin-right: 5px;
 }
-  
+
   .Java {background-color: #aa7004;} /* Green */
   .csharp {background-color: #6a0fd1ee;} /* Blue */
   .Python {background-color: #3359d6cb;} /* Orange */
@@ -1363,8 +1304,8 @@ ul.show{
 	flex-direction: column;
 	background-image: url(../img/puertollano.jpg);
 	background-size: cover;
-	
-	
+
+
 }
 
 #contacto:before {
@@ -1374,7 +1315,7 @@ ul.show{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	
+
 }
 
 
@@ -1387,7 +1328,7 @@ ul.show{
 	justify-content: center;
 	align-items: center;
 	margin-top: 30px;
-	
+
 }
 
 .contacto__container .contacto__informacion
@@ -1396,7 +1337,7 @@ ul.show{
 	display:flex;
 	flex-direction: column;
 	padding-left: 55px;
-	
+
 }
 
 .contacto__container .contacto__informacion .contacto__box
@@ -1404,8 +1345,8 @@ ul.show{
 	position: relative;
 	padding: 20px 0;
 	display:flex;
-	
-	
+
+
 }
 
 .contacto__container .contacto__informacion .contacto__box .contacto__icon{
@@ -1420,7 +1361,7 @@ ul.show{
 }
 
 
-.contacto__container .contacto__informacion .contacto__box .contacto__texto h3{ 
+.contacto__container .contacto__informacion .contacto__box .contacto__texto h3{
 	display: flex;
 	margin-left: 16px;
 	align-content: center;
@@ -1453,7 +1394,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	color:rgb(96, 93, 93);
 	font-weight: 500;
 }
-	
+
 .contacto__contacto__form .contacto__inputBox{
 	position: relative;
 	width:100%;
@@ -1468,7 +1409,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	font-size: 16px;
 	margin:10px 0;
 	border:none;
-	
+
 
 }
 .contacto__contacto__form .contacto__inputBox textarea{
@@ -1522,7 +1463,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	font-style: bold;
 	transform: translateY(-30px);
 	padding-bottom: 10px;
-	
+
 }
 
 .contacto__contacto__form .contacto__inputBox  input[type="submit"]{
@@ -1558,7 +1499,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	.contacto__container .contacto__informacion, .contacto__contacto__form
 	{
 		width: 100%;
-	}	
+	}
 }
 
 
@@ -1629,7 +1570,7 @@ footer p:nth-child(2){
 	position: absolute;
 	color:#f9004d;
 	bottom: 35px;
-	font-size: 14px; 
+	font-size: 14px;
 }
 
 
@@ -1699,15 +1640,15 @@ footer p:nth-child(2){
 
 
 @media screen and (max-width:858px) and (orientation:landscape){
- 
+
     .menu_items{
         overflow: scroll;
     }
     .menu_items li{
         margin: 5px 0 0 0;
         line-height: 30px;
-    }   
-	
+    }
+
 }
 
 
