@@ -119,10 +119,10 @@ button:hover{
 ****************** 01.NavBar *******************
 *                                              *
 ***********************************************/
-.container{
-	/* max-width: 968px;
-	margin: auto;  */
-}
+/* .container{
+	max-width: 968px;
+	margin: auto; 
+} */
 
 ul{
     list-style: none;
@@ -222,9 +222,9 @@ a{
 	color:var(--main-color);
 }
 
-i.nav__icon {
+/* i.nav__icon {
 	display:none;
-}
+} */
 
 .active__link{
     position:relative;
@@ -233,7 +233,7 @@ i.nav__icon {
 
 }
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
     .active__link::before{
         content:'';
         position: absolute;
