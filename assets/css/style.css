@@ -1107,13 +1107,13 @@ ul.show{
 	display: grid;
 	grid-gap: 16px;
 	padding: 14px;
-	max-width: 1024px;
+	max-width: 1000px;
 	color: var(--white);
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(350px,auto));
 	align-items: center;
 	gap:2rem;
-	margin: 5rem 40px 0 40px;
+	margin: 10rem 40px 0 40px;
 }
 	
 
