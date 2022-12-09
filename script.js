@@ -105,3 +105,10 @@ function scrollActive(){
 }
 
 window.addEventListener('scroll',scrollActive);
+
+
+
+function sendEmailDefault(){
+    var email = "mjesus.duenas.recuero@gmail.com";
+    window.open(`mailto:${email}`);
+  }
