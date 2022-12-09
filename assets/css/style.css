@@ -27,7 +27,7 @@
 	--h1-font-hero:5.5rem;
 	--h2-font:4.1rem;
 	--h3-font:25px;
-	--h3-font-about:20px;
+	--h3-font-about:18px;
 	--p-font:1.1rem;
 
 }
@@ -227,6 +227,22 @@ i.nav__icon {
         background-color: var(--main-color);
         border-radius: 3px;
     }
+	.main-text{
+		text-align: center;
+		color: var(--white);
+	
+	}
+	.main-text h2{
+		font-size: var(--h3-font);
+		margin-bottom: 10px;
+	
+	}
+	.main-text h4{
+		color: var(--main-color);
+		font-size: 13px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
 }
 
 
@@ -268,13 +284,29 @@ i.nav__icon {
      .section__title{
         font-size: 16px;
      }
+	 .main-text{
+		text-align: center;
+		color: var(--white);
+	
+	}
+	.main-text h2{
+		font-size: var(--h3-font);
+		margin-bottom: 10px;
+	
+	}
+	.main-text h4{
+		color: var(--main-color);
+		font-size: 13px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
 }
 
 @media screen and (max-width:576px){
     .nav__list{
         justify-content: center;
 		padding: 2px;
-		font-size: 15px;
+		font-size: 10px;
     }
 }
 
