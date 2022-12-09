@@ -1070,9 +1070,13 @@ ul.show{
 	}
 
 }
-
-
-
+.qualification__button.qualification__active{
+    color: var(--main-color);
+}
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
 .qualification__section{
 	margin: 100px 0 100px 0;
 
