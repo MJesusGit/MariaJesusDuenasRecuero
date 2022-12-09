@@ -1541,6 +1541,7 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 90px;
 }
 footer p:nth-child(1){
 	font-size: 30px;
@@ -1580,6 +1581,7 @@ footer p:nth-child(2){
 	color:#f9004d;
 	bottom: 35px;
 	font-size: 14px;
+	padding-bottom: 50px;
 }
 
 
