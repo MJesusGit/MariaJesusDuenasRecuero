@@ -26,7 +26,7 @@
 <body>
 	<header class="header" id="header">
 		<nav class="nav container">
-			<h2  class="nav__logo">/<span>MJ</span>/</h2>
+			<a href="#inicio"><h2 class="nav__logo">/<span>MJ</span>/</h2></a>
 			<div class="nav__menu" id="nav-menu">
 				<ul class="nav__list" >
 					<!-- <li class="nav__item"><a href="#inicio" class="active__link" ><i class='bx bx-home-alt nav__icon'></i><span class="nav__name">Inicio</span></a></li>
@@ -46,7 +46,12 @@
 			<div class="inicio__presentacion">
 				<h4>Hola, mi nombre es</h4>
 				<h1>María Jesús <br><span>Dueñas Recuero</span></h1>
-				<a class="bubbly-button" href="assets/doc/DueñasRecuero_Mariajesus__CV.pdf" download="María Jesús Dueñas" style="text-decoration:none" style="text-align: center;" >Descargar CV</a>
+				<div >
+					<a class="bubbly-button" href="#sobremi"  style="text-decoration:none" style="text-align: center;" >¡Conóceme!</a>
+					<a class="bubbly-button" href="assets/doc/DueñasRecuero_Mariajesus__CV.pdf" download="María Jesús Dueñas" style="text-decoration:none" style="text-align: center;" >Descargar CV</a>
+				</div>
+				
+
 			</div>
 		</section>
 
@@ -68,8 +73,8 @@
 					<div class = "about-right">
 						<div class = "about-para">
 							<h2>INGENIERIA INFORMÁTICA | TECNOLOGÍAS DE LA INFORMACIÓN</h2><br>
-							<p>Estudiante de ingeniería informática, cursando mi último año de grado. Habituada a entregas con plazos estricto y apasionada del desarrollo software centrado en el usuario.
-							<p>Me gusta aprender de mi entorno y de cada una de las personas con las que trabajo.</p>
+							<p>Estudiante de ingeniería informática, cursando mi último año de grado. Habituada a entregas con plazos estricto y apasionada del desarrollo software centrado en el usuario.</p><br>
+							<p>Me gusta aprender de mi entorno y de cada una de las personas con las que trabajo.</p><br>
 							<p>Con ganas de seguir aprendiendo y especializándome en la experiencia e interfaces de usuario, así como, desarrollo frontend.</p>
 						</div>
 					</div>
@@ -89,7 +94,7 @@
 						Educación
 					</div>
 					<div class="qualification__button button--flex" data-target="#cursos">
-						<i class="fa fa-bookmark qualification__icon"></i>
+						<i class="fa fa-book qualification__icon"></i>
 						Cursos
 					</div>
 
@@ -570,15 +575,25 @@
 			<div class="main-text">
 				<h2>Contacto</h2>
 				<h4>¡No dude en contactar conmigo ante cualquier pregunta!</h4>
-				<div class="container__contact">
+
+				
+				
+			</div>
+			<div class="flexbox">
+				<div class="flexcard ">
 					<button class="bubbly-button" onclick="sendEmailDefault()"  style="text-decoration:none">Correo electrónico</button>
 				</div>
-				<div class="container__contact">
-					<button class="bubbly-button" href="https://www.linkedin.com/in/maría-jesús-dueñas/"  style="text-decoration:none" style="text-align: center" >LinkedIn</button>
+				<div class="flexcard ">
+					<a class="bubbly-button" href="https://www.linkedin.com/in/maría-jesús-dueñas/" target="_blank"  style="text-decoration:none" style="text-align: center" >LinkedIn</a>
 				</div>
-				<div class="container__contact">
-					<a class="bubbly-button" href="https://twitter.com/home"  style="text-decoration:none" style="text-align: center;" >Twitter</a>
+				<div class="flexcard ">
+					<a class="bubbly-button" href="https://twitter.com/home"  target="_blank" style="text-decoration:none" style="text-align: center;" >Twitter</a>
 				</div>
+
+
+
+
+
 			</div>
 		</section>
 
