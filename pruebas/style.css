@@ -252,3 +252,137 @@ i.nav__icon {
 .qualification__link:hover{
     color: var(--link-color-hover);
 }
+
+
+.section > header{
+	font-size: 44px;
+	text-transform: capitalize;
+	text-align: center;
+	padding:24px;
+	color: var(--main-color) ;
+}
+
+.conocimientos .skill{
+	display: grid;
+	grid-gap: 16px;
+	padding: 14px;
+	max-width: 1000px;
+	color: var(--white);
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+	align-items: center;
+	gap:2rem;
+	margin: 10rem 40px 0 40px;
+}
+
+
+
+.skill .set{
+	padding: 24px;
+	padding-left: 150px;
+	padding-right: 130px;
+	border-radius: 16px;
+	cursor: pointer;
+	background: rgba(69, 69, 69, 0.267);
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	font-size: 22px;
+    
+}
+
+.skill .set:hover{
+	box-shadow:0px 12px 16px var(--main-color) ;
+}
+
+.skill .set .list img{
+	width: 30px;
+	height: 30px;
+}
+
+
+.set span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	font-size:50px;
+	background-color: var(--main-color);
+	color: var(--white);
+	border-radius: 35%;
+	margin-inline: auto;
+}
+
+.set > header{
+	padding-block:24px ;
+	font-size: 30px;
+	color:var(--white);
+	text-align: center;
+}
+.set .list{
+	padding-block:0px;
+	display: grid;
+	grid-template-columns: 1fr 50px;
+	color:var(--overlay-color);
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.set .list .label{
+	font-size: 30px;
+
+}
+
+.set:hover .list{
+	color:var(--text) ;
+
+}
+
+@media screen and (max-width: 1326px){
+	.skill{
+		grid-template-columns:repeat(3,3fr);
+
+
+	}
+}
+
+@media screen and (max-width: 600px){
+	.skill{
+		grid-template-columns: repeat(3,1fr);
+
+	}
+	.portfolio__content{
+		grid-template-columns: 1fr;
+	}
+
+
+}
+@media screen and (max-width: 480px){
+
+	.skill{
+		grid-template-columns: 1fr;
+
+	}
+	.set .list{
+		padding-block:0px;
+		display: grid;
+		grid-template-columns: 1fr 50px;
+		color:var(--overlay-color);
+		text-transform: capitalize;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+	.set .list .label{
+		font-size: 10px;
+
+	}
+
+	.set:hover .list{
+		color:var(--text) ;
+
+	}
+
+}
